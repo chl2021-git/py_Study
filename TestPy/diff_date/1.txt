@@ -1,0 +1,2850 @@
+=====================开发基础=================================
+1.多选题
+UC wants to assess the advantages of declarative development versus programmatic customization for specific use cases in its Salesforce implementation.
+What are two characteristics of declarative development over programmatic customization  Choose 2 answers
+A. Declarative development has higher design limits and query limits.
+B. Declarative development can be done using the Setup UI.
+C. Declarative development does not require maintenance.
+D. Declarative development does not require Apex test classes.
+正确答案. BC
+2.多选题
+UC decides to use purely declarative development to build out a new Salesforce application.
+Which three options can be used to build out the business logic layer for this application Choose 3 answers
+A. Validation Rules
+B. Remote Actions
+C. Process Builder
+D. Flow Builder
+E. Batch Jobs
+正确答案. ACD
+3.多选题
+Which two types of process automation can be used to calculate the shipping cost for an Order when the Order is placed and apply a percentage of the shipping cost to some of the related Order Products  Choose 2 answers
+A. Process Builder
+B. Approval Process
+C. Workflow Rule
+D. Flow Builder
+正确答案. AD
+4.多选题
+What are two characteristics related to formulas  Choose 2 answers
+A. Formulas can reference themselves.
+B. Formulas are calculated at runtime and are not stored in the database.
+C. Fields that are used in a formula field can be deleted or edited without editing the formula.
+D. Formulas can reference values in related objects.
+正确答案. BD
+5.多选题
+Which two statements accurately represent the MVC framework implementation in Salesforce Choose 2 answers
+A. Standard and Custom objects used in the app schema represent the View (V) part of the MVC framework.
+B. Lightning component HTML files represent the Model (M) part of the MVC framework.
+C. Tigger used to create records represent the Model (M) part of the MVC framework.
+D. Validation rules enforce business rules and represent the Controller (C) part of the MVC framework.
+正确答案. CD
+6.单选题
+What is a benefit of developing applications in a multi-tenant environment 
+A. Default out-of-the-box configuration
+B. Access to predefined computing resources
+C. Unlimited processing power and memory
+D. Enforced best practices for development
+正确答案. A
+7.多选题
+Which three operations affect the number of times a trigger can fire  Choose 3 answers
+A. Email messages
+B. Roll-Up Summary fields
+C. Workflow Rules
+D. Criteria-based Sharing calculations
+E. Lightning Flows
+正确答案. BCE
+8.单选题
+When a user edits the Postal Code on an Account, a custom Account text field named "TimeZone" must be updated based on the values in a PostalCodeToTimeZone__c custom object.
+How should a developer implement this feature 
+A. Build an Account custom trigger
+B. Build an Account Workflow Rule
+C. Build an Account Assignment Rule
+D. Build an Account Approval Process.
+正确答案. A
+9.单选题
+An org has an existing Visual Flow that creates an Opportunity with an Update Records element. A developer must update the Visual Flow to also create a Contact and store the created Contact's ID on the Opportunity.
+Which update should the developer make in the Visual Flow 
+A. Add a new Get Records element.
+B. Add a new Update Records element.
+C. Add a new Create Records element.
+D. Add a new Quick Action(of type Create) element.
+正确答案. C
+10.多选题
+Universal Containers decides to use exclusively declarative development to build out a new Salesforce application.
+Which three options should be used to build out the database layer for the application  Choose 3 answers
+A. Relationships
+B. Process Builder
+C. Triggers
+D. Custom Objects and Fields
+E. Roll-up Summaries
+正确答案. ADE
+11.单选题
+A developer needs to implement the functionality for a service agent to gather multiple pieces of imformation from a customer in order to 
+send a replacement credit card.
+Which automation tool meets these requirements 
+A. Lightning Component
+B. Flow Builder
+C. Process Builder
+D. Approval Process
+正确答案. B
+12.单选题
+Which aspect of Apex programming is limited due to multitenancy 
+A. The number of methods in an Apex class
+B. The number of records returned from database queries
+C. The number of active Apex classes
+D. The number of records processed in a loop.
+正确答案. B
+13.多选题
+In terms of the MVC paradigm, what are two advantages of implementing the view layer of a Salesforce application using Aura Component-based 
+development over Visualforce Choose 2 answers
+A. Server-side run-time debugging
+B. Self-contained and reusable units of an application
+C. Automatic code generation
+D. Rich component ecosystem
+正确答案. BD
+14.单选题
+Universal Containers wants to back up all of the data and attachments in Salesforce org once a month.
+Which approach should a developer use to meet this requirement 
+A. Schedule a report
+B. Create a Schedulable Apex Class
+C. Define a Data Export scheduled job.
+D. Use the data loader command line.
+正确答案. C
+15.单选题
+A developer has a requirement to create an Order when an Opportunity reaches a 'Closed-Won' status.
+Which tool should be used to implement this requirement 
+A. Lightning Flow
+B. Process Builder
+C. Apex Trigger
+D. Lightning Component
+正确答案. B
+16.多选题
+Which three process automations can immediately send an email notification to the owner of an Opportunity 
+when its Amount is changed to be greater than $10.000  Choose 3 answers
+A. Escalation Rule
+B. Workflow Rule
+C. Process Builder
+D. Flow Builder
+E. Approval Process
+正确答案. BCD
+17.单选题
+Which process automation should be used to send an outbound message without using Apex code 
+A. Flow Builder
+B. Process Builder
+C. Approval Process
+D. Workflow Rule
+正确答案. D
+18.多选题
+A developer at Universal Containers is tasked with implementing a new Salesforce application that must built by their company's Salesforce administrator.
+Which three options should be considered for building out the business logic layer of the application  Choose 3 answers
+A. Scheduled Jobs
+B. Validation Rules
+C. Invocable Actions
+D. Workflows
+E. Process Builder
+正确答案. BDE
+=====================数据模型与管理=================================
+1.单选题
+The values 'High', 'Medium', and 'Low' are identified as common values for multiple picklists across different objects.
+What is an approach a developer can take to streamline maintenance of the picklists and their values, while also restricting 
+the values to the ones mentioned above 
+A. Create the Picklist on each object and use a Global Picklist Value Set containing the values.
+B. Create the Picklist on each object as a required field and select "Display values alphabetically, not in the order entered".
+C. Create the Picklist on each object and select "Restrict picklist to the values defined in the value set".
+D. Create the Picklist on each object and add a validation rule to ensure data integrity.
+正确答案. A
+2.多选题
+When importing and exporting data into Salesforce, Which two statement are true 
+Choose 2 answers
+A. Data import wizard is a client application provided by Salesforce.
+B. Developer and Developer Pro sandboxes have different storage limits.
+C. Bulk API can be used to import large data volumes in development environments without bypassing the storage limits.
+D. Bulk API can be used to bypass the storage limits when importing large data volumes in development environments.
+正确答案. BC
+3.单选题
+A developer needs to join data received from an integration with an external system with parent records in Salesforce. The data set does not contain the Salesforce IDs of the parent records, but it does have a foreign key attribute that can be used to identify the parent.
+Which action will allow the developer to relate records in the data model without knowing the salesforce ID 
+A. Create and populate a custom field on the parent object marked as an External ID.
+B. Create a custom field on the child object of type Lookup.
+C. Create a custom field on the child object of type  External Relationship.
+D. Create and populate a custom field on the parent object marked as Unique.
+正确答案. A
+4.单选题
+What is an example of a polymorphic lookup field in Salesforce 
+A. The Leadld and Contactld fields on the standard Campaign Member object
+B. A custom field, Link__c, on the standard Contact object that looks up to an Account or a Campaign
+C. The Whatld field on the standard Event object
+D. The Parentld field on the standard Account object
+正确答案. C
+5.单选题
+A PrimaryId__c custom field exists on the Candidate__c custom object. The field is used to store each candidate's id number and is marked as Unique in the schema definition.
+As part of a data enrichment process, UC has a CSV file that contains updated data for all candidates in the system. The file contains each Candidate's primary id as a data point. UC wants to upload this information into Salesforce, while ensuring all data rows are correctly mapped to a candidate in the system.
+Which technique should the developer implement to streamline the data upload 
+A. Create a before insert trigger to correctly map the records. 
+B. Upload the CSV into a custom object related to Candidate__c. 
+C. Update the Primaryld__c field definition to mark it as an External Id.
+D. Create a Process Builder on the Candidate__c object to map the records.
+正确答案. C
+6.单选题
+What is fundamental different between a Mater-Detail relationship and a Lookup relationship 
+A. In a Master-Detail relationship, when a record of a master object is deleted, the detail records are not deleted.
+B. A Master-Detail relationship detail record inherits the sharing and security of its master record.
+C. In a Lookup relationship, the field value is mandatory.
+D. In a Lookup relationship when the parent record is deleted, the child records are always deleted.
+正确答案. B
+7.单选题
+A SSN__c custom field exists on the Candidate __c custom object. The field is used to store each candidate's social security number and is marked as Unique in the schema definition.
+As part of a data enrichment process, Universal Containers has a CSV file that contains updated data for all candidates in the system. The file contains each Candidate's social security number as a data point. Universal Containers wants to upload this information into Salesforce, while ensuring all data rows are correctly mapped to a candidate in the system. Which technique should the developer implement to streamline the data upload 
+A. Upload the CSV into a custom object related to Candidate__c. 
+B. Update the SSN__c field definition to mark it as an External Id.
+C. Create a before insert trigger to correctly map the records. 
+D. Create a process Builder on the Candidate__c object to map the records.
+正确答案. B
+8.单选题
+A developer wants to import 500 Opportunity records into a sandbox.
+Why should the developer choose to use Data Loader instead of Data Import Wizard 
+A. Data Import Wizard does not support Opportunities.
+B. Data Import Wizard can not import all 500 records.
+C. Data Loader runs from the developer's browser.
+D. Data Loader automatically relates Opportunities to Accounts.
+正确答案. A
+9.单选题
+Universal Containers has an order system that uses an Order Number to indentify an order for customers and service agents. Order records will be imported into Salesforce. 
+How should the Order Number field be defined in Salesforce 
+A. Indirect Lookup
+B. Lookup
+C. Number with External ID
+D. Direct Lookup
+正确答案. C
+10.单选题
+Universal Containers(UC) uses a custom object called Vendor. The Vendor custom object has a Master-Detail relationship with the standard Account object.
+Based on some internal discussions, the UC administrator tried to change the Master-Detail relationship to a Lookup relationship but was not able to do so.
+What is possible reason that this change was not permitted 
+A. The Vendor object must use a Master-Detail field for reporting.
+B. The Account object is included on a workflow on the Vendor object.
+C. The Account records contain Vendor roll-up summary fields.
+D. The Vendor records has existing values in the Account object.
+正确答案. C
+11.单选题
+A custom picklist field Food_Preference__c, exists an a custom object. The picklist contains the following options:
+'Vegan'. 'Kosher', 'No Preference'. The developer must ensure a value is populated every time a record is created or updated.
+A. Mark the field as Required on the object's page Layout.
+B. Mark the field as Required on the field definition.
+C. Set "Use the first value in the list as default value" as True.
+D. Set a validation rule to enforce a value is selected.
+正确答案. B
+12.单选题
+An org tracks customer orders on an Order object and the line items of an Order on the Line Item object. The Line Item object has a 
+Master/Detail relationship to the Order object. A developer has requirement to calculate the order amount on an Order and the line amount 
+on each Line Item based on quantity and price.
+What is the correct implementation 
+A. Write a process an the Line Item that calculated the item amount and order amount and updates the fields on the Line Item and the Order.
+B. Implement the line amount as a numeric formula field and the order amount as a roll-up summary field.
+C. Implement the line amount as a currency field and the order amount as SUM formula field.
+D. Write a single before trigger on the Line Item that calculates the item amount and updates the order amount on the Order.
+正确答案. B
+13.单选题
+Universal Containers used a simple Order Management app. On the Order Lines, the order line total is calculated by multiplying the item price 
+with the quantity ordered. There is a Master-Detail relationship between the Order and the Order Lines object.
+What is the best practice to get the sum of all order line totals on the order header 
+A. Apex Trigger
+B. Declarative Roll-Up Summary App
+C. Process Builder
+D. Roll-Up Summary Field
+正确答案. D
+14.单选题
+Universal Containers stores Orders and Line Items in Salesforce. For security reasons, financial representatives are allowed to see information
+on the Order such as order amount, but they are not allowed to see the Line Item on the Order.
+Which type of relationship should be user 
+A. Indirect Lookup
+B. Lookup
+C. Master-Detail
+D. Direct Lookup
+正确答案. B
+15.单选题
+A developer must build an application that tracks which Accounts have purchaesd specific pieces of equipment that are represented as 
+Products Each Account could purchse many pieces of equipment.
+How should the developer track that an Account has purchased a piece of equipment 
+A. Use a Lookup on Account to Product
+B. Use the Asset object
+C. Use a Master-Detail on Product to Account
+D. Use a Custom object
+正确答案. B
+16.单选题
+UC wants to lower its shipping cost while making the shipping process more efficient. The Distribution Officer advises UC to implement global addresses to allow multiple Accounts to share a default pickup address. The developer is tasked to create the supporting object and relationship for this business requirement and uses the Setup Menu to create a custom object called "Global Address".
+Which field should the developer add to create the most efficient model that supports the business need 
+A. Add a Master-Detail field on the Global Address object to the Account object.
+B. Add a Lookup field on the Account object to the Global Address object.
+C. Add a Master-Detail field on the Account object to the Global Address object.
+D. Add a Lookup field on the Global Address object to the Account object.
+正确答案. B
+17.多选题
+A Licensed_Professional __c custom object exists in the system with two Master-Detail fields for the following objects: Certification__c and Contact.
+Users with the "Certification Representative" role can access the Certification records they own and view the related Licensed Professionals records, however users with the "Sales Representative" role report they cannot view any Licensed Professional records even though they own the associated Contact record.
+What are two likely causes of users in the "Sales Representative" role not being able to access the Licensed Professional records Choose 2 answers
+A. The organization has a private sharing model for Certification__c, and Contact is the primary relationship in the Licensed_Professinal__c object.
+B. The organization has a private sharing model for Certification__c, and Certification__c is the primary relationship in the Licensed_Professinal__c object. 
+C. The organization recently modified the Sales Representative role to restrict Read/Write access to Licensed_Professinal__c. 
+D. The organization recently modified the Sales Representative role to restrict Read access to Licensed_Professinal__c. 
+正确答案. BD
+18.单选题
+A developer has the following requirements:
+      Calculate the total amount on an Order.
+      Calculate the amount for each Line Item based on quantity selected and price.
+      Move Line Items to a different Order if a Line Item is not in stock.
+Which relationship implementation supports these requirements 
+A. Line Item has a Master-Detail field to Order and the Master can be re-parented.
+B. Order has a Lookup field to Line Item and there can be many Line Item per Order.
+C. Line Item has a Lookup field to Order and there can be many Line Item per Order.
+D. Order has a Master-Detail field to Line Item and there can be many Line Item per Order.
+正确答案. A
+=====================逻辑与流程自动化1-单选=================================
+1.单选题
+Which annotation exposes an Apex class as a RESTful web service 
+A. @AuraEnabled
+B. @RestResource
+C. @RemoteAction
+D. @HttpInvocable
+正确答案. B
+2.单选题
+What is the value of the Trigger.old context variable in a Before Insert trigger 
+A. A list of newly created sObjects without IDs
+B. Undefined
+C. An empty list of sObjects
+D. null
+正确答案. D
+3.单选题
+Which statement should be used to allow some of the records in a list of records to be inserted if others fail to be inserted 
+A. insert records
+B. Database.insert(records, true)
+C. insert(records, false)
+D. Database.insert(records, false)
+正确答案. D
+4.单选题
+A developer receives an error when trying to call a global server-side method using the @remoteAction decorator.
+How can the developer resolve the error 
+A. Change the function signature to be private static.
+B. Add static to the server-side method signature.
+C. Decorate the server-side method with (static=true).
+D. Decorate the server-side method with (static=false).
+正确答案. C
+5.单选题
+An Approval Process is defined in the Expense_Item__c object. A business rule dictates that whenever a user changes the Status to 'Submitted' on an Expense_Export__c record, all the Expense_Item__c records related to the expense report must enter the approval process individually. 
+What approach should be used to ensure the business requirement is met 
+A. Create a Process Builder on Expense_Report__c with an 'Apex' action type to submit all related Expense_Item__c records when the criteria is met.
+B. Create two Process Builder, one on Expense_Report__c to mark the related Expense_Item__c to submit the records for approval. 
+C. Create a Process Builder on Expense_Report__c with a 'Submit for Approval' action type to submit all related Expense_Item__c records when the criteria is met.
+D. Create a Process Builder on Expense_Report__c to mark the related Expense_Item__c as submittable and a trigger on Expense_Item__c to submit the records for approval. 
+正确答案. A
+6.单选题
+A workflow updates the value of a custom field for an existing Account.
+How can a developer access the updated custom field value from a trigger 
+A. By writing a Before Insert trigger and accessing the field value from Trigger.new
+B. By writing an After Update trigger and accessing the field value from Trigger.old
+C. By writing a Before Update trigger and accessing the field value from Trigger.new
+D. By writing an After Insert trigger and accessing the field value from Trigger.old
+正确答案. B
+7.单选题
+In the following example, which sharing context will myMethod execute when it is invoked 
+public Class myClass {
+     public void myMethod( ) { /* implementation */ }
+}
+A. Sharing rules will be inherited from the calling context.
+B. Sharing rules will not be enforced for the running user.
+C. Sharing rules will be enforced for the running user.
+D. Sharing rules will be enforced by the instantiating class.
+正确答案. B
+8.单选题
+Which action may cause triggers to fire 
+A. Updates to Feed Items
+B. Cascading delete operations
+C. Renaming or replacing a picklist entry
+D. Changing a user's default division when the transfer division option is checked
+正确答案. A
+9.单选题
+Instead of sending emails to support personnel directly from Salesforce, UC wants to notify an external system in the event that an unhandled exception occurs. 
+What is the appropriate publish/subscribe logic to meet this requirement 
+A. Publish the error event using the addError( ) method and write a trigger to subscribe to the event and notify the external system.
+B. Publish the error event using the Eventbus.publish( ) method and have the external system subscribe to the event using CometD.
+C. Publish the error event using the addError( ) method and have the external system subscribe to the event using CometD.
+D. Have the external System subscribe to the BatchApexError event, no publishing is necessary.
+正确答案. B
+10.单选题
+Which action causes a before trigger to fire by default for Accounts 
+A. Importing data using the Data Loader and the Bulk API
+B. Converting Leads to Contact accounts
+C. Updating addresses using the Mass Address update tool
+D. Renaming or replacing picklists
+正确答案. A
+11.单选题
+What is the result of the following code 
+Account a = new Account( );
+Database. insert(a, false);
+A. The record will not be created and no error will be reported .
+B. The record will be created and no error will be reported.
+C. The record will be created and a message will be in the debug log. 
+D. The record will not be created and an exception will be thrown.
+正确答案. A
+12.单选题
+What will be the output in the debug log in the event of a QueryException duing a call to the aQuery method in the following example 
+class myClass {
+   class CustomException extends QueryException  { }
+   public static Account aQuery( ) {
+       Account theAccount;
+       try {
+         system. debug( ' Querying Accounts. ');
+         theAccount = [SELECT Id FROM Account WHERE CreatedDate > TODAY] ;
+       }
+      catch (CustomException eX) {
+          system.debug(' Custom Exception. ');
+       }
+      catch (QueryException eX) {
+          system.debug('Query Exception. ');
+      } 
+     finally {
+       system.debug('Done. ');
+     }
+    return theAccount ;
+  }
+}
+A. Querying Accounts. Query Exception.
+B. Querying Accounts. Custom Exception. Done.
+C. Querying Accounts. Query Exeption. Done.
+D. Querying Accounts. Custom Exeption. 
+正确答案. C
+13.单选题
+A developer is creating a page that allows users to create multiple Opportunities. The deceloper is asked to verify the current user's default Opportunity record type, and set certain default values based on the record type before inserting the record.
+How can the developer find the current user's default record type 
+A. Use the Schema.userInfo.Opportunity.getDefaultRecordType( ) method.
+B. Query the Profile where the ID equals userInfo.getProfileID( ) and then use the profile.Opportunity.getDefaultRecordType( ) method.
+C. Use Opportunity.SObjectType.getDescribe( ).getRecordTypeInfos( ) to get a list of record types, and iterate through them until isDefaultRecordTypeMapping( ) is true.
+D. Create the opportunity and check the opportunity.recordType before inserting, which will have the record ID of the current user's default record type.
+正确答案. C
+14.单选题
+The sales management team at Universal Containers requires that the Lead Source field of the Lead record be populated when a Lead is converted.
+What should be used to ensure that user poulates the Lead Source field prior to converting a Lead 
+A. Validation Rule
+B. Formula Field
+C. Process Builder
+D. Workflow Rule
+正确答案. A
+15.单选题
+What is the result of the following code snippet 
+public void doWork(Account acct){
+      for (Integer i = 0; i <= 200; i++){
+        insert acct;
+      }
+ }
+A. 0 Accounts are inserted. 
+B. 1 Account is inserted.
+C. 200 Accounts are inserted.
+D. 201 Acconts are inerted.
+正确答案. A
+16.单选题
+Which action causes a before trigger to fire by default for Accounts 
+A. Renaming or replacing picklists
+B. Importing data using the Data Loader and the Bulk API
+C. Updating addresses using the Mass Address update tool
+D. Converting Leads to Person accounts
+正确答案. B
+17.单选题
+How many Accounts will be inserted by the following block of code 
+for(Integer i = 0; i< 500; i++){
+    Account a = new Account (Name= 'New Account ' +i);
+    insert a;
+}
+A. 500
+B. 0
+C. 100
+D. 150
+正确答案. B
+18.单选题
+A dveloper must implement a CheckPaymentProcessor class that povides check processing payment capabilities that adhere to what is defined for payments in the PaymentProcessor interface. 
+public interface PaymentProcessor {
+        void pay (Decimal amount) ;
+}
+Which is the correct implementation to use the PaymentProcessor interface class 
+A. public class CheckPaymentProcessor extends PaymentProcessor  {
+        public void pay (Decimal amount) { }
+}
+B. public class CheckPaymentProcessor implements PaymentProcessor {
+        public void pay(Decimal amount);
+}
+C. public class ChecpaymentProcessor extends PaymentProcessor {
+        public void pay(Decimal amount);
+}
+D. public class CheckPaymentProcessor implements PaymentProcessor {
+public void pay(Decimal amount) { }
+}
+正确答案. D
+19.单选题
+The Job_Application__c custom object has a field that is a Master-Detail relationship to the Contact object, where the Contact object is the Master. As part of a feature implementation, a developer needs to retrieve a list containing all Contact records where the related Account Industry is 'Technology' while also retrieving the contact's Job_ Application__ c records.
+Based on the object's relationships, what is the most efficient statement to retrieve the list of contacts 
+A. [SELECT Id, (SELECT Id FROM Job_ Application__ c) FROM Contact WHERE Accounts. Industry = 'Technology'];
+B. [SELECT Id, (SELECT Id FROM Job_ Application__ c) FROM Contact WHERE Account. Industry = 'Technology'];
+C. [SELECT Id, (SELECT Id FROM Job_ Application__ r) FROM Contact WHERE Account. Industry = 'Technology'];
+D. [SELECT Id, (SELECT Id FROM Job_ Application__ r) FROM Contact WHERE Accounts. Industry = 'Technology'];
+正确答案. C
+20.单选题
+A developer is debugging the following code to determine why Account are not being created.
+Account a = new Account(Name='A');
+Database.insert(a, false);
+How should the code be altered to help debug the issue 
+A. Collect the insert method return value in a SaveResult record.
+B. Add a System.debug() statement before the insert method.
+C. Add a try/catch around the insert method.
+D. Set the second insert method parameter to TRUE.
+正确答案. A
+21.单选题
+A developer considers the following snippet of code:
+Boolean isOK;
+Integer x;
+String theString = 'Hello';
+if(isOk == false && theString == 'Hello'){
+x=1;
+}else if(isOK == true && theString == 'Hello'){
+x=2;
+}else if(isOk == null  && theString == 'Hello'){
+x=3;
+}else{
+x=4;
+}
+Based on this code, what is the value of x 
+A. 2
+B. 1
+C. 4
+D. 3
+正确答案. D
+22.单选题
+A developer must create a ShippingCalculator class that cannot be instantiated and must include a working default implementation of a calculate method, that sub-classes can overrude.
+What is the correct implementation of the ShippingCalculator class 
+A. public abstract class ShippingCalculator{
+       public abstract calculate(){ /*implementation*/}
+}
+B. public abstract class ShippingCalculator{
+       public void calculate(){ /*implementation*/}
+}
+C. public abstract class ShippingCalculator{
+       public virtual void calculate(){ /*implementation*/}
+}
+D. public abstract class ShippingCalculator{
+       public override calculate(){ /*implementation*/}
+}
+正确答案. D
+23.单选题
+Given the following trigger implementation:
+trigger leadTrigger on Lead (before update){
+       final ID BUSINESS_RECORDTYPEID = '012500000009Qad';
+       for(Lead thisLead: Trigger.new){
+            if(thisLead.Company != null && thisLead.RecordTypeId != BUSINESS_RECORDTYPEID){
+               thisLead.RecordTypeId = BUSINESS_RECORDTYPEID;
+            }
+       }
+}
+The developer receivers deployment errors every time a deployment is aattempted from Sandbox to Production.
+What should the developer do to ensure a successful deployment 
+A. Ensure BUSINESS_RECORDTYPEID is pushed as part of the deployment components.
+B. Ensure a record type with an ID of  BUSINESS_RECORDTYPEID exists on Production prior to deployment.
+C. Ensure the deployment is validated by a System user on Production.
+D. Ensure BUSINESS_RECORDTYPEID  is retrieved using Schema Describe calls.
+正确答案. D
+24.单选题
+Universal Containers(UC) decides it will not to send emails to support personnel directly from Salesforce in the event that an unhandled 
+exception occurs.  Instead, UC wants an external system be notified of the error.
+What is the appropriate publish/subscribe logic to meet these requirements 
+A. Publish the error event using the  Eventbus.publish() method and have the external system subscribe to the event using CometD.
+B. Have the external system subscribe to the BatchApexError event, no publishing is necessary.
+C. Publish the error event using the addError() method and write a trigger to subscribe to the event and notify the external system.
+D. Publish the error event using the addError() method and have the external system subscribe to the event suing CometD.
+正确答案. A
+25.单选题
+A devveloper uses a loop to check each Contact in a list. When a Contact with the Title of 'Boss' is found, the Apex method should jump to 
+the first line of code outside of the for loop.
+Which Apex solution will let the developer implement this requirement 
+A. break
+B. continue;
+C. return;
+D. System.assert(false);
+正确答案. A
+26.单选题
+Cloud Kicks Fitness, an ISV Salesforce partner, is developing a managed package application, One of the application modules allows the user to 
+calculate body fat using the Apex class, BodyFat, and its method, calculateBodyFat(). The product owner wants to ensure this method is accessible by 
+the consumer of the application when developing customizations outside the ISV's package namespace.
+Which approach should a developer take to ensure calculateBodyFat() is accessible outside the package namespace 
+A. Declare the class and method using the global asscess modifier.
+B. Declare the class and method using the public asscess modifier.
+C. Declare the class as global and use the public access modifier on the method.
+D. Declare the class as public and use the global access modifier on the method.
+正确答案. A
+27.单选题
+A developer needs to prevent the creation of Request records when certain exist in the system. A RequestLogic class exists that checks the conditions.
+What is the correct implementation 
+A. trigger RequestTrigger on Request (before insert){
+RequestLogic.validateRecords(trigger.new);
+}
+B. trigger RequestTrigger on Request (after insert){
+RequestLogic.validateRecords(trigger.new);
+}
+C. trigger RequestTrigger on Request (after insert){
+if(RequestLogic.isValid(Request))
+request.addError('Your request cannot be created at this time.');
+}
+D. trigger RequestTrigger on Request (before insert){
+if(RequestLogic.isValid(Request))
+request.addError('Your request cannot be created at this time.');
+}
+正确答案. D
+28.单选题
+Given the following Apex statement:
+Account myAccount = [SELECT Id, Name FROM Account];
+What occurs when more than one Account is returned by the SOQL query 
+A. The query fails and an error is written to the debug log.
+B. The first Account returned is assigned to myAccount.
+C. The variable, myAccount, is automatically cast to the List data type.
+D. An unhandled exception is thrown and the code terminates.
+正确答案. D
+29.单选题
+A recursive transaction is initiated by a DML statement creating records for these two objects:
+1. Accounts
+2. Contacts
+The Account trigger hits a stack depth of 16:
+Which statement is true regarding the outcome of the transaction 
+A. The transaction fails and all the changes are rolled back.
+B. The transaction succeeds as long as the Contact trigger stack depth is less than 16.
+C. The transaction succeeds and all changes are committed to the database.
+D. The transaction fails only if the Contact trigger stack depth is greater or equal to 16.
+正确答案. A
+30.单选题
+Universal Containers implemented a private sharing model for the Account object. A custom Account search tool was developer with Apex to 
+help sales representatives find accounts that match multiple criteria they specify. Since its release, users of the tool report can see Accounts they do not own.
+What should the developer use to enforce sharing permissions for the currently logged-in user while using the custom search tool 
+A. Use the with sharing keyword on the class declaration.
+B. Use the UserInfo Apex class to filter all SOQL queries to returned records owned by the logged-in user.
+C. Use the without sharing keyword on the class declaration.
+D. Use the schema describe calls to detemine if the logged-in user has access to the Account object.
+正确答案. A
+31.单选题
+A developer must write an Apex method that will be called from a Lightning component. The method may delete an Account stored in the accountRec variable.
+Which method should a developer use to ensure only users that should be able to delete Accounts can successfully perform deletions 
+A. accountRec.isDeletable()
+B. Schema.sObjectType.Account.isDeletable()
+C. accountRec.sObjectType.isDeletable()
+D. Account.isDeletable()
+正确答案. B
+32.单选题
+Which Salesforce feature allows a developer to see when a user last logged in to Salesforce if real-time notification is not required 
+A. Calendar Events
+B. Event Monitoring Log
+C. Developer Log
+D. Asynchronous Data Capture Events
+正确答案. B
+33.单选题
+A developer must create a DrawList class that provides capabilities defined in the Sortable and Drawable interfaces.
+Public interface Sortable{
+void sort();
+}
+Public interface Drawable{
+void draw();
+}
+Which is the correct implementation 
+A. public class DrawList implements Sortable, implements Drawable{
+           public void sort() { /*implementation*/ }
+           public void draw(){ /*implementation*/ }
+}
+B. public class DrawList extends Sortable, Drawable{
+           public void sort() { /*implementation*/ }
+           public void draw(){ /*implementation*/ }
+}
+C. public class DrawList extends Sortable, extends Drawable{
+           public void sort() { /*implementation*/ }
+           public void draw(){ /*implementation*/ }
+}
+D. public class DrawList implements Sortable, Drawable{
+           public void sort() { /*implementation*/ }
+           public void draw(){ /*implementation*/ }
+}
+正确答案. D
+34.单选题
+Which exception type cannot be caught 
+A. A Custom Exception
+B. NoAccessException
+C. CalloutException
+D. LimitException
+正确答案. D
+35.单选题
+A developer must create a CreditCardPayment class that provides an implementation of an existing Payment class.
+public virtual class Payment{
+           public virtual void makePayment(Decimal amount) { /*implementation*/}
+}
+Which is the correct implementation 
+A. public class CreditCardPayment extends Payment{
+          public virtual void makePayment(Decimal amount){/*implementation*/}
+}
+B. public class CreditCardPayment extends Payment{
+          public override void makePayment(Decimal amount){/*implementation*/}
+}
+C. public class CreditCardPayment implements Payment{
+          public override void makePayment(Decimal amount){/*implementation*/}
+}
+D. public class CreditCardPayment implements Payment{
+          public virtual void makePayment(Decimal amount){/*implementation*/}
+}
+正确答案. B
+36.单选题
+A developer has an integer variable called maxAttempts. The developer needs to ensure that once maxAttempts is initialized, it preserves its value for the length of the Apex transaction; while being able to share the variable's state between trigger executions.
+How should the developer declare max attempts to meet these requirements 
+A. Declare maxAttempts as a variable on a helper class.
+B. Declare maxAttempts as constant using the static and final keywords.
+C. Declare maxAttempts as a private static variable on a helper class. 
+D. Declare maxAttempts as a member variable on the trigger definition.
+正确答案. B
+37.单选题
+A developer writes a single trigger on the Account object on the after insert and after update events. A workflow rule modifies a field every time an Account is created or updated.
+How many times will the trigger fire if a new Account is inserted, assuming no other automation logic is implemented on the Account 
+A. 8
+B. 1
+C. 4
+D. 2
+正确答案. D
+38.单选题
+A develper writes a trigger on the Account object on the before update event that increments a count field. A workflow rule also increments the count field every time that an Account is created or updated. The field update in the workflow rule is configured to not re-evaluate workflow rules.
+What is the value of the count field if an Account is inserted with an initial value of zero, assuming no other automation logic is implemented on theAccount 
+A. 4
+B. 2
+C. 1
+D. 3
+正确答案. B
+=====================逻辑与流程自动化1-多选=================================
+1.多选题
+UC hires a developer to built a custom search page to help users find the Accounts they want.
+Users will be able to search on Name, Description, and a custom comments field.
+Which consideration should the developer be aware of when deciding between SOQL and SOSL 
+Choose 2 answers
+A. SOQL is able to return more records.
+B. SOSL is faster for text searches.
+C. SOQL is faster for text searches.
+D. SOSL is able to return more records.
+正确答案. AB
+2.多选题
+Example 1:
+AggregateResult[ ] groupedResults = [ SELECT CampaignId, AVG(Amount) FROM Opportunity GROUP BY CampaignId];
+for (AggregateResult ar : groupedResults) 
+{
+      System.debug( 'Campaign ID' + ar.get('CampaignId'));
+      System.debug( 'Average amount' + ar.get('expr0'));
+}
+Example 2:
+AggregateResult[ ] groupedResults = [ SELECT CampaignId, AVG(Amount) theAverage FROM Opportunity GROUP BY CampaignId];
+for (AggregateResult ar : groupedResults) 
+{
+      System.debug( 'Campaign ID' + ar.get('CampaignId'));
+      System.debug( 'Average amount' + ar.get('theAverage'));
+}
+Example 3:
+AggregateResult[ ] groupedResults = [ SELECT CampaignId, AVG(Amount) FROM Opportunity GROUP BY CampaignId];
+for (AggregateResult ar : groupedResults) 
+{
+      System.debug( 'Campaign ID' + ar.get('CampaignId'));
+      System.debug( 'Average amount' + ar.get.AVG());
+}
+Example 4:
+AggregateResult[ ] groupedResults = [ SELECT CampaignId, AVG(Amount) theAverage FROM Opportunity GROUP BY CampaignId];
+for (AggregateResult ar : groupedResults) 
+{
+      System.debug( 'Campaign ID' + ar.get('CampaignId'));
+      System.debug( 'Average amount' + ar.theAverage);
+}
+Which two examples above use the System.debug statements to correctly display the results from the SOQL aggregate queries 
+Choose 2 answers
+A. Example 1
+B. Example 2
+C. Example 3
+D. Example 4
+正确答案. AB
+3.多选题
+Refer to the following code snippet for an environment has more than 200 Accounts belonging to the 'Technology' industry:
+for(Account thisAccount : [Select Id, Industry FROM Account LIMIT 150]){
+     if(thisAccount.Industry == 'Technology' ){
+         thisAccount.Is_Tech__c = true;
+      }
+update thisAccount;
+}
+When he code executes which two events occur as a result of the Apex transaction Choose 2 answers
+A. If executed in a synchronous context, the apex transaction is likely to fail by exceeding the DML governor limit.
+B. The Apex transaction fails with the following message: "SObject row was retrieved via SOQL without querying the requested field:Account.Is_Tech__ c" .
+C. If executed in an asynchronous context, the apex transaction is likely to fail by exceeding the DML governor limit.
+D. The Apex transcation succeeds regardless of any uncaught exception and all processed accounts are updated.
+正确答案. AB
+4.多选题
+Uiversal Containers wants Opporunities to be locked from editing when reaching the Closed/Won stage.
+Which two strategies should a developer use to accomplish this  Choose 2 answers
+A. Use a validation rule.
+B. Use the Process Automation settings.
+C. Use a trigger. 
+D. Use Flow Builder.
+正确答案. AC
+5.多选题
+A developer needs to create a custom interface in Apex. Which three considerations must the developer keep in mind while developing the Apex interface  Choose 3 answers
+A. A method implementation can be defined within the Apex Interface.
+B. New methods can be added to a public interface within a released package.
+C. The Apex class must be declared using the interface keyword.
+D. The Apex class access modifier can be set to Private, Public, or Global.
+E. A method defined in an Apex interface cannot have an access modifier. 
+正确答案. BCE
+6.多选题
+A developer wants to invoke an outbound message when a record meets a specific criteria. 
+Which three features satisfy this use case  Choose 3 answers
+A. Process builder can be used to check the record criteria and send an outbound message without Apex Code.
+B. Visual Workflow can be used to check the record criteria and send an outbound message without Apex Code.
+C. Process builder can be used to check the record criteria and send an outbound message with Apex Code.
+D. Approval Process has the capability to check the record criteria and send an outbound message without Apex Code.
+E. Workfows can be used to check the record citeria and send an outbound message.
+正确答案. CDE
+7.多选题
+Which two operations can be performed using a formula field  Choose 2 answers
+A. Displaying the lasy four digits of an encrypted Social Security number.
+B. Triggering a Process Builder.
+C. Displaying an Image based on the Opportunity Amount.
+D. Calculating a score on a Lead based on the information from another field.
+正确答案. CD
+8.多选题
+What are three considerations when using the @InvocableMethod annotation in Apex  Choose 3 answers
+A. Only one method using the @InvocableMethod annotation can be defined per Apex class.
+B. A method using the @InvocableMethod annotation must be declared as static. 
+C. A method using the @InvocableMethod annotation must define a return value.
+D. A method using the @InvocableMethod can have multiple input parameters.
+E. A method using the @InvocableMethod annotation can be declared as Public or Global.
+正确答案. ABE
+9.多选题
+A developer is implementing an Apex class for a financial system. Within the class, the variables 'creditAmount' and 'debitAmount' should not be able to change once a value is assigned.
+In which two ways can the developer declare the variables to ensure their value can only be assigned one time  Choose 2 answers
+A. Use the final keyword and assign its value in the class constructor. 
+B. Use the static keyword and assign its value in the dass constructor. 
+C. Use the static keyword and assign its value in sstatic initializer. 
+D. Use the final keyword and assign its value when declaring the variable. 
+正确答案. AD
+10.多选题
+A developer identifies the following triggers on the Expense__c object:
+deleteExpense;
+applyDefaultsToExpense;
+validateExpenseUpdate;
+The triggers process before delete, before insert, and before update event respectively.
+Which two techniques should the developer implement to ensure reigger best practices are followed  Chooose 2 answers
+A. Unify all three triggers in a single trigger on the Expense__c object that includes all events.
+B. Create helper classes to execute the appropriate logic when a record is saved.
+C. Maintain all three triggers on the Expense__c object, but move the Apex logic out of the trigger definition.
+D. Unify the before insert and before update triggers and use Process Builder for the delete action.
+正确答案. AB
+11.多选题
+A developer has to identify a method in an Apex class that performs resource intensive actions in memory by iterating over the result set of a SOQL statement on the account. The method also performs a DML statement to save the changes to the database.
+Which two techniques should the developer implement as a best practice to ensure transaction control and avoid exceeding governor limits  Choose 2 answers
+A. Use the Database.Savepoint method to enforce database integrity.
+B. Use the @ReadOnly annotation to bypass the number of rows returned by a SOQL.
+C. Use the System.Limit class to monitor the current CPU governor limit consumption. 
+D. Use Partial DML statements to ensure only valid data is committed.
+正确答案. AC
+12.多选题
+Which three data types can a SOQL query return  Choose 3 answers
+A. Long
+B. sObject
+C. List
+D. Integer
+E. Double
+正确答案. BCD
+13.多选题
+A developer has a requirement to create a Case when a record on the Complaint__c object is created. Which two ways can this be solved  
+Choose 2 answers
+A. Create a flow that initiates a new Case.
+B. Use platform events add create a trigger on after insert of the Complaint__c record to create the Case.
+C. Create a Lightning Conponent that listens for the event and calls an Apex method to create the Case
+D. Create a Process Builder that triggers when a Complaint__c record is created, and create the Case.
+正确答案. AB
+14.多选题
+If Apex code executes inside the execute() method of an Apex class when implementing the Batchable interface, which two statement are true regarding governor limits  Choose 2 answers
+A. The Apex governor limits are reset for each iteration of execute() method.
+B. The Apex governor limits cannot be exceeded due to the asynchronous nature of the transaction.
+C. The Apex governor limits might be higher due to the asynchronous nature of the transaction.
+D. The Apex governor limits are relaxed while calling the constructor of the Apex class.
+正确答案. AB
+15.多选题
+A developer must create an Apex class, ContactController, that a Lightning component can use to search for Contact records. Users of the 
+Lightning component should only be able to search for Contact records to which they have access.
+Which two will restrict records correctly  Choose 2 answers
+A. public without sharing class ContactController
+B. public class ContactController
+C. public inherited sharing class ContactController
+D. public with sharing class ContactController
+正确答案. CD
+16.多选题
+Universal Containers recently transltioned from Classic to Lightning Experience. One of its business processes requires 
+contain values from the Opportunity object to be sent via an HTTP REST callout to its external order management system 
+based on a user-initiated action on the Opportunity detail page, Example values are as follows:
+Name
+Amount
+Account
+Which two methods should the developer implement to fulfill the business requirement 
+A. Create an after trigger on the Opportunity object that calls a helper method using @Future(Callout=true) to perform 
+the HTTP REST callout.
+B. Create a Visualforce page that performs the HTTP REST callout, and use a Visualforce quick action to expose the component 
+on the Opportunity detail page.
+C. Create a Lightning component that performs the HTTP REST callout, and use a Lightning Action to expose the component 
+on the Opportunity detail page.
+D. Create a Process Builder on the Opportunity object that exeutes an Apex immediate action to perform the HTTP RESR callout 
+whenever the Opportunity is updated.
+正确答案. AC
+=====================逻辑与流程自动化2=================================
+1.多选题
+Assuming that 'name' is a Stirng obtained by an <apex:inputText> tag on a Visualforce page, which two SOQL queries performed are safe from SOQL injection Choose 2 answers
+A. String query = 'SELECT Id FROM Account WHERE Name LIKE \''%' + name + '%\'';
+List<Account> results = Database.query(query);
+B. String query = 'SELECT Id FROM Account WHERE Name LIKE \''%' + name.noQuotes() + '%\'';
+List<Account> results = Database.query(query);
+C. String query = '%' + name + '%';
+List<Account> results ='[SELECT Id FROM Account WHERE Name LIKE :query];
+D. String query = 'SELECT Id FROM Account WHERE Name LIKE \''%' + String.escapeSingleQuotes(name) + '%\'';
+List<Account> results = Database.query(query);
+正确答案. CD
+2.单选题
+Refer to the following code that runs in an Execute Anonymous block:
+for( List<Lead> theseLeads : [SELECT LastName, Company, Email FROM Lead LIMIT 20000]) {
+    for(Lead thisLead : theseLeads) {
+         if(thisLead.Email == null)
+            thisLead.Email = assignGenericEmail(thisLead.LastName, thisLead.Company);
+     }
+     Database.Update(theseLeads, false);
+}
+In an environment where the full result set is returned, what is a possible outcome of this code 
+A. The transaction will succeed and the first ten thousand records will be committed to the database.
+B. The total number of DML statements issued will be exceeded.
+C. The total number of records processed as a result of DML statements will be exceeded.
+D. The transaction will succeed and the full result set changes will be committed to the database.
+正确答案. C
+3.单选题
+Given the code below:
+List<Account> aList = '[SELECT Id FROM Account];
+for(Account a : aList) {
+       List<Contact> cList = '[SELECT Id FROM Contact WHERE AccountId =:a.Id];
+}
+What should a developer do to correct the code so that there is no chance of hitting a governor limit 
+A. Add a LIMIT clause to the first SELECT SOQL statement.
+B. Rework the code and eliminate the for loop.
+C. Add a WHERE clause to the first SELECT SOQL statement.
+D. combine the two SELECT statements into a single SOQL statement.
+正确答案. D
+4.单选题
+A Next Best Action strategy uses an Enhance Element that invokes an Apex method to determine a discount level for a Contact, based on a number of factors.
+What is the correct definition of the Apex method 
+A.  @InvocableMethod
+ global static List<List<Recommendation>>
+ getLevel (List<ContactWrapper> input)
+ { /*implementation*/ }
+B. @InvocableMethod
+ global List<List<Recommendation>>
+ getLevel (List<ContactWrapper> input)
+ { /*implementation*/ }
+C.  @InvocableMethod
+ global Recommendation getLevel (ContactWrapper input)
+ { /*implementation*/ }
+D.  @InvocableMethod
+ global static ListRecommendation
+ getLevel (List<ContactWrapper> input)
+ { /*implementation*/ }
+正确答案. A
+5.单选题
+A developer wants to mark each Account in a List<Account> as either Active or Inactive based on the LastModifiedDate field value being more than 90 days.
+Which Apex technique should the developer use 
+A. A switch statement, with a for loop inside
+B. A for loop, with a switch statement inside
+C. An if/else statement, with a for loop inside
+D. A for loop, with an if/else statement inside
+正确答案. D
+6.单选题
+The following Apex method is part of the ContactSertvice class that is called from a trigger:
+public static void setBusinessUnitToEMEA(Contact thisContact){
+        thisContact . Business_Unit__c = 'EMEA';
+        update thisContact;
+}
+How should the developer modify the code to ensure best practices are met 
+A. public static void setBusinessUnitToEMEA(List<Contact> contacts){
+         for(Contact thisContact : contacts){
+               thisContact . Business_Unit__ c = 'EMEA';
+               update contacts[0];
+         }   
+}
+B. public static void setBusinessUnitToEMEA(List<Contact> contacts){
+         for(Contact thisContact : contacts){
+               thisContact . Business_Unit__ c = 'EMEA';
+         }
+               update contacts;
+}
+C. public static void setBusinessUnitToEMEA(Contact thisContact){
+        List<Contact> contacts = new list<Contacts>( );
+         contacts. add(thisContact. Business_Unit__c = 'EMEA');
+          update contacts;
+}
+D. public void setBusinessUnitToEMEA(List<Contact> contacts){
+        contact[0]. Business_Unit__ c = 'EMEA';
+               update contacts[0];
+}
+正确答案. B
+7.多选题
+A developer is tasked to perform a security review of the ContactSearch Apex calss that exists in the system. Within the class, the developer identifies the following method as a security threat:
+List<Contact> performSearch(String lastName){
+   return Database.query('SELECT Id, FirstName, LastName FROM Contact WHERE LastName Like %'+lastName+'%' );
+What are two ways the developer can update the method to prevent a SOQL injection attack  Choose 2 answers
+A. Use a regular expression expression on the parameter to remove special characters.
+B. Use the @ReadOnly annotation and the with sharing keyword on the class.
+C. Use variable binding and replace the dynamic query with a static SOQL.
+D. Use the escapeSingleQuotes method to sanitize the parameter before its use.
+正确答案. CD
+8.单选题
+A developer wants to retrieve the Contacts and Users with the email address 'dev@uc.com'.
+Which SOSL statement should the developer use 
+A. FIND {Email = 'dev@uc.com' } IN Contact, User
+B. FIND { dev@uc.com' } IN Email Fields RETURNTING Contact (Email), User (Email)
+C. FIND {Email = 'dev@uc.com' } RETURNTING Contact (Email), User (Email)
+D. FIND Email IN Contact, User FOR {dev@UC.vom}
+正确答案. B
+9.单选题
+Given the following block of code:
+try{
+  List<Account> retrievedRecords = '[SELECT Id FROM Account WHERE Website = null];
+}catch(Exception e){
+    //manage excception logic
+}
+What should a developer do to ensure the code execution is disrupted if the list retrievedRecords remains empty after the SOQL query 
+A. Check the state of the retrievedRecords variable and access the first element of the list if the variable is empty.
+B. Check the state of the retrievedRecords variable and throw a custom exception if the variable is empty.
+C. Check the state of the retrievedRecords variable and use System.assert(false) if the variable is empty.
+D. Replace the retrievedRecords variable declaration from a List of Account to a single Account.
+正确答案. B
+10.单选题
+Given the following Anonymous Block:
+List<Case> casesToUpdate = new List<Case>( );
+for(Case thisCase : [Select Id, Status FROM Case LIMIT 50000]){
+     thiscase. Status = 'Working';
+     casesToUpdate. add(hisCase);
+}
+try{
+  Database. update(casesToUpdate, false);
+}catch(Exception e){
+  System. debug(e. getMessage());
+}
+What should a developer consider for an environment that has over 10,000 Case records 
+A. The try/catch block will handle exceptions thrown by governor limits.
+B. The transaction will succeed and changes will be committed.
+C. The try/catch block will handle any DML exceptions thrown.
+D. The transcation will fail due to exceeding the governor limit.
+正确答案. D
+11.单选题
+Which statement generates a list of Leads and Contacts that have a field with the phrase 'ACME' 
+A. List<sObject> searchList = [FIND "*ACME*" IN ALL FIELDS RETURNING Contact, Lead];
+B. List<List<sObject>> searchList = [FIND "*ACME*" IN ALL FIELDS RETURNING Contact, Lead];
+C. Map<sObject> searchList = [FIND "*ACME*" IN ALL FIELDS RETURNING Contact, Lead];
+D. List<List<sObject>> searchList = '[SELECT Name, ID FROM Contact, Lead WHERE Name like '%ACME%'];
+正确答案. B
+12.单选题
+What is the maximum number of SOQL queries used by the following code 
+List<Account> aList = '[SELECT Id from Account LIMIT 5];
+for(Account a : aList){
+List<Contact> cList ='[SELECT Id FROM Contact WHERE AccountId = :a.Id];
+}
+A. 1
+B. 2
+C. 6
+D. 5
+正确答案. C
+13.单选题
+The following Apex method is part of the ContactService class that is called from a trigger:
+public static void setBusinessUnitToEMEA(Contact thisContact){
+          thisContact.Business_Unit__c = 'EMEA';
+          update thisContact;
+}
+How should the developer modify the code to ensure best practices are met 
+A. public static void setBusinessUnitToEMEA(Contact thisContact){
+          List<Contact> contacts = new List<Contact>();
+          contacts.add(thisContact.Business_Unit__c = 'EMEA');
+          update contacts;
+}
+B. public static void setBusinessUnitToEMEA(List<Contact> contacts){
+          for(Contact thisContact : contacts){
+               thisContact.Business_Unit__c = 'EMEA';
+          }
+          update contacts;
+}
+C. public static void setBusinessUnitToEMEA(List<Contact> contacts){
+          for(Contact thisContact : contacts){
+               thisContact.Business_Unit__c = 'EMEA';
+               update contacts[0];
+          }  
+}
+D. public static void setBusinessUnitToEMEA(List<Contact> contacts){
+         contacts[0].Business_Unit__c = 'EMEA';
+          update contacts[0];
+}
+正确答案. B
+14.单选题
+A developer must modify the following code snippet to prevent the number of SOQL queries issued from exceeding the platform governor limit.
+public class without sharing OpportunityService{
+      public static List<OpportunityLineItem> getOpportunityProducts(Set<Id> opportunityIds){
+            List<OpportunityLineItem> oppLineItems = new List<OpportunityLineItem>();
+           for(Id thisOppId : opportunityIds){
+                oppLineItems. addAll([Select Id FROM OppLineItem WHERE OpportunityId = :thisOppId]);
+         }
+        return oppLineItems;
+     }
+ }
+The above method might be called during a trigger execution via a Lightning component.
+Which technique should be implemented to avoid reaching the governor limit 
+A. Refactor the code above to perform the SOQL query only if the Set of opportunityIds contains less 100 Ids.
+B. Refactor the code above to perform only one SOQL query, filtering by the Set of opportunityIds.
+C. Use the System. Limits. getQueries( ) method to ensure the number of queries is less than 100.
+D. Use the System. Limits. getLimitQueries( ) method to ensure the number of queries is less than 100.
+正确答案. B
+=====================用户界面=================================
+1.多选题
+Which two statements are true about Getter and Setter methods as they relate to Visualforce  Choose 2 answers
+A. Getter methods can pass a value from a controller to a page.
+B. There is no guarantee for the order in which Getter or Setter methods are executed.
+C. Setter methods always have to be declared global.
+D. Setter methods can pass a value from a controller to a page.
+正确答案. AB
+2.多选题
+Which two characteristics are true for Aura component events  Choose 2 answers
+A. The event propagates to every owner in the containment hierarchy.
+B. Only parent components that create subcomponents(either in their markup or programmatically) can handle events.
+C. lf a container component needs to handle a component event, add a handleFacets="true" attribute to its handler.
+D. Depending on the current  propagation phase, calling event.stopPropagation( ) may not propagation.
+正确答案. AC
+3.多选题
+What are two ways that a controller and extension can be specified for a custom object named Notice on a Visualforce page  Choose 2 answers
+A. apex:page controller = "Notice__c" extensions="myControllerExtension"
+B. apex:page standardController = "Notice__c" extensions="myControllerExtension"
+C. apex:page controllers = "Notice__c, myControllerExtension"
+D. apex:page = Notice extends = "myControllerExtension"
+正确答案. AB
+4.多选题
+Which three resources in an Aura Component can contain JavaScript functions  Choose 3 answers
+A. Helper
+B. Controller
+C. Style
+D. Design
+E. Renderer
+正确答案. ABE
+5.多选题
+Which three Salesforce resources can be accessed from a Lighting web component   Choose 3 answers
+A. All external libraries
+B. Static resources
+C. Content asset files
+D. Third-party web components
+E. SVG resources
+正确答案. BCE
+6.多选题
+What are two ways that a controller extension can be specified on a Visualforce page  Choose 2 answers
+A. apex:page controller="Account" extensions="myControllerExtension"
+B. apex:page extends="myControllerExtension"
+C. apex:page controller="Accunt, myControllerExtension"
+D. apex:page standardController="Account" extensions="myControllerExtension"
+正确答案. AD
+7.单选题
+How does the Lightning Component framework help developers implement solutions faster 
+A. By providing an Agile process with default steps
+B. By providing device-awarenedd for mobile and desktops
+C. By providing code review standards and processes
+D. By providing change history and version control
+正确答案. B
+8.多选题
+which two are best practices when it comes to Aura component and application event handling  Choose 2 answers
+A. Reuse the event logic in a component bundle, by putting the logic in the helper.
+B. Handle low-level events in the event handler and re-fire them as higher-level events.
+C. Use component events to communicate actions that should be handled at the application level.
+D. Try to use application events as opposed to component events.
+正确答案. AB
+9.单选题
+A developer created a Visualforce page and custom controller to display the account type field as shown below.
+Custom controller code:
+public with sharing class customCtrlr {
+           private Account theAccount;
+           public String actType;
+           public customCtrlr( ) {
+                    theAccount = [SELECT Id, Type FROM Account WHERE Id = :ApexPages.currentPage().getParameters().get('Id')];
+                    actType = theAccount.Type;
+          }
+}
+Visualforce page snippet:
+The Account Type is {!actType}
+The value of the account type field is not being displayed correctly on the page. Assuming the custom controller is properly 
+referenced on the Visualforce page, what should the developer do to correct the problem 
+A. Add a getter method for the actType attribute.
+B. Convert theAccount.Type to a String.
+C. Add with sharing to the custom controller.
+D. Change theAccount attribute to public.
+正确答案. A
+10.单选题
+An Apex method, getAccounts, that returns a List of Accounts given a searchTerm, is available for Lightning Web components to use.
+What is the correct definition of a Lightning Web component property that uses the getAccounts method 
+A.  @AuraEnabled (getAccounts, { searchTerm: '$searchTerm' } )
+accountList;
+B.  @wire (getAccounts, '$searchTerm')
+accountList;
+C.  @wire (getAccounts, { searchTerm: '$searchTerm' })
+accountList;
+D.  @AuraEnabled(getAccounts, '$searchTerm')
+accountList;
+正确答案. C
+11.单选题
+How should a custom user interface be privided when a user edits an Account in Lightning Experience 
+A. Override the Account's Edit button with a Lightning component.
+B. Override the Account's Edit button with a Lightning Flow.
+C. Override the Account's Edit button with a Lightning Action.
+D. Override the Account's Edit button with a Lightning page.
+正确答案. A
+12.多选题
+Which three web technologies can be integrated into a Visualforce page 
+A. JavaScript
+B. HTML
+C. Java
+D. CSS
+E. PHP
+正确答案. ABD
+13.多选题
+Which three steps allow a custom SVG to be included in a Lightning web component Choose 3 answers
+A. Reference the getter in the HTML template.
+B. Upload the SVG as a static resource.
+C. Import the SVG as a content asset file.
+D. Import the static resource and provide a getter for it in JavaScript.
+E. Reference the import in the HTML template.
+正确答案. BDE
+14.单选题
+A developer must provide a custom user interface when users edit a Contact. Users must be able to use the interface in Salesforce Classic and Lightning Experience.
+What should the developer do to provide the custom user interface 
+A. Override the Contact's Edit button with a Lightning page in Salesforce Classic and a Visualforce page in Lightning Experience.
+B. Override the Contact's Edit button with a Visualforce page in Salesforce Classic and a Lightning component in Lightning Experience.
+C. Override the Contact's Edit button with a Visualforce page in Salesforce Classic and a Lightning page in Lightning Experience.
+D. Override the Contacts's Edit button with a Lightning component in Salesforce Classic and a Lightning component in Lightning Experience.
+正确答案. B
+15.单选题
+A developer has an Apex controller for a Visualforce page that takes an ID as a URL parameter.
+How should the developer prevent a cross site scripting vulnerability 
+A. String.escapeSingleQuotes(ApexPages.currentPage().getParameters().get('url_param'))
+B. ApexPage.currentPage().getParameters().get('url_param')
+C. String.ValueOf(ApexPages.currentPage().getParameters().get('url_param'))
+D. ApePages.currentPage().getParameters().get('url_param').escapeHtml4()
+正确答案. D
+16.多选题
+Which two are phases in the Salesforce Application Event propagation framework  Choose 2 answers
+A. Control
+B. Default
+C. Bubble
+D. Emit
+正确答案. BC
+17.单选题
+Application Events follow the traditional publish-subscribe model
+Which method is used to fire an event 
+A. fire()
+B. emit()
+C. fireEvent()
+D. registerEvent()
+正确答案. A
+18.单选题
+Universal Containers has a large number of custom applications that were built using a third-party JavaScript framework and exposed using Visualforce pages. The company wants to update these applications to apply styling that resembles the look and feel of Lightning Experience.
+What should the developer do to fulfill the business request in the quickest and most effective manner 
+A. Set the attribute enableLightning to true in the definition.
+B. Incorporate the Salesforce Lightning Design System CSS stylesheet into the JavaScript applications. 
+C. Enable Available for Lightning Experience, Lightning Communities, and the mobile app on Visualforce pages used by the custom application. 
+D. Rewrite all Visualfocre pages as Lightning components. 
+正确答案. B
+19.单选题
+What does the Lightning Component framework provide to developers 
+A. Extended governor limits for applications
+B. Templated to create custom components
+C. Prebuilt components that can be reused
+D. Support for Classic and Lightning UIs
+正确答案. C
+20.多选题
+Which three code lines are required to create a Lightning component on a Visualforce page  Choose 3 answers
+A. $lightning.useComponent
+B. <apex:slds/>
+C. $lightning.use
+D. <apex:includeLightning/>
+E. $Lightning.createComponent
+正确答案. CDE
+21.多选题
+What are three capabilities of the <ltng:require> tag when loading JavaScript resources in Aura components  Choose 3 answers
+A. Specifying loading order
+B. Loading scripts in parallel
+C. Loading files from Documents
+D. One-time loading for duplicate scripts
+E. Loading externally hosted scripts
+正确答案. ABD
+22.多选题
+A developer needs to create a custom button for the Account object that, when clicked, will perform a series of calculations and redirect the user to a custom Visualforce page.
+Which three attributes need to be defined with values in the <apex:page> tag to accomplish this  Choose 3 answers
+A. extensions
+B. action
+C. standardController
+D. renderAs
+E. readOnly
+正确答案. ABC
+23.单选题
+Which code in a Visualforce page and/or cotroller might present a security vulnerability 
+A. <apex : outputText escape="false" value= "{ !$CurrentPage . parameters .userInput } " />
+B. <apex : outputField value="{ !ctrl . userInput }" / >
+C. <apex : outputText value="{ !$CurrentPage . parameters . userInput } " />
+D. <apex : outputField escape="false" value="{ !ctrl . userInput }" />
+正确答案. A
+24.单选题
+A developer must crreate a Lightning component that allows users to input Contact record information to create a Contact record, including a Salary__c custom field.
+What should the developer use, along with a lightning-record-edit-form, so that Salary__c field functions as a currency input and is only viewable and editable by users that have the correct field level permissions on Salary__c  
+A. <lightning-input-field field-name="Salary__c"></lightning-input-field>
+B. <lightning-input-currency value="Salary__c"></lightning-input-currency>
+C. <lightning-input type="number" value="Salary__c" formatter="currency"></lightning-input>
+D. <lightning-formatted-number value="Salary__c" format-style="currency"></lightning-formatted-number>
+正确答案. A
+25.单选题
+Universal Containers wants a list button to display a Visualforce page that allows users to edit multiple records.
+Which Visualforce feature supports this requirement 
+A. recordSetVar page attribute
+B. <apex:listButton> tag
+C. custom controller
+D. controller extension
+正确答案. A
+26.单选题
+A Lightning component has a wired property, searchResults, that stores a list of Opportunities.
+Which definition of the Apex method, to which the searchResults property is wired, should be used 
+A. @AuraEnabled(cacheable=false)
+public List<Opportunity> search(String term){ /*implementation*/ }
+B. @AuraEnabled(cacheable=true)
+public List<Opportunity> search(String term){ /*implementation*/ }
+C. @AuraEnabled(cacheable=false)
+public static List<Opportunity> search(String term){ /*implementation*/ }
+D. @AuraEnabled(cacheable=true)
+public static List<Opportunity> search(String term){ /*implementation*/ }
+正确答案. D
+27.单选题
+A developer has a Visualforce page and custom controller to save Account records. The developer wants to display any validation rule violations to the user.
+How can the developer make sure that validation rule violations are displayed 
+A. Include <apex:messages> on the Visualforce page.
+B. Perform the DML using the Database.upsert( ) method.
+C. Add custom controller attributes to display the message.
+D. Use a try/catch with a custom exception class.
+正确答案. A
+28.单选题
+Which code displays the contents of a Visualforce page as a PDF 
+A. <apex:page renderAs="pdf">
+B. <apex:page contentType="pdf">
+C. <apex:page contentType="application/pdf">
+D. <apex:page renderAs="application/pdf">
+正确答案. A
+29.单选题
+Which code should be used to update an existing Visualforce page that uses standard Visualforce components so that the page 
+matches the look and feel of Lightning Experience 
+A. <apex:page LightningStyleSheets="true">
+B. <apex:slds/>
+C. <apex:incluedLightning/>
+D. <apex:styleSheet value="{!$Resource.slds, 'assets/slds.css')}">
+正确答案. A
+30.单选题
+A developer is asked to create a Visualforce page that displays some Account fields as well as fields configured on the page layout for related Contacts.
+How should the developer implement this request 
+A. Use the <apex:include> tag.
+B. Add a method to the standard controller.
+C. Use the <apex:relatedList> tag.
+D. Create a controller extension.
+正确答案. D
+=====================测试-调试-部署=================================
+1.多选题
+What are three characteristics of change set deployments  Choose 3 answers
+A. Deployment is done in a one-way, single transaction.
+B. Change sets can deploy custom settings data.
+C. Change sets can only be used between related organizations.
+D. Change sets can be used to transfer records.
+E. Sending a change set between two orgs requires a deployment connection.
+正确答案. ACE
+2.多选题
+Which three statements are accurate about debug logs  Choose 3 answers
+A. Amount of information logged in the debug log can be controlled by the log levels.
+B. To View Debug Logs, "Manager Users or "View AI Data" permission is needed.
+C. Debug Log levels are cumulative, where FINE log level includes all events logged at the DEBUG, INFO, WARN, and ERROR levels.
+D. Amount of information logged in the debug log can be controlled programmatically.
+E. To View Debug Logs, "Manager users" or "Modify All Data" permission is needed. 
+正确答案. ABC
+3.单选题
+A developer needs to create a baseline set of data(Accounts, Contacts, Products, Assets) for an entire suite of tests allowing them to test independent requirements various types of Salesforce Cases.
+Which approach can efficiently generate the required data for each unit test 
+A. Create a mock using the Stub API.
+B. Add @IsTest(seeAllData=true) at the start of the unit test class. 
+C. Create test data before Test.startTest( ) in the unit test. 
+D. Use @TestSetup with a void method.
+正确答案. D
+4.多选题
+Which two statements are true about using the @testSetup annotation in an Apex test class Choose 2 answers
+A. Test data is inserted once for all test methods in a class.
+B. The @testSetup annotation is not supported when the @isTest(SeeAllData=True) annotation is used.
+C. A method defined with the @testSetup annotation automatically executes before each test method in the test class is executes.
+D. Records created in the test setup method cannot be updated in individual test methods.
+正确答案. AB
+5.单选题
+A developer needs to have records with specific field values in order to test a new Apex class.
+What should the developer do to ensure the data is available to the test 
+A. Use SOQL to query the org for the required data.
+B. Use Anonymous Apex to create the required data.
+C. Use Test.loadData( ) and reference a CSV file.
+D. Use Test.loadData( ) and reference a static resource.
+正确答案. D
+6.单选题
+While working in a sandbox an Apex test fails when run in the Test Framework, but the Apex test logic succeeds with no exceptions or errors when run in the Developer Console.
+Why did the method fail in the sandbox test framework but succeed in the Developer Console 
+A. The test method does not use System.runAs to execute as a specific user. 
+B. The test method is calling an @future method.
+C. The test method has a syntax error in the code. 
+D. The test method relies on exiting data in the sandbox.
+正确答案. D
+7.单选题
+When using SalesforceDX, what does a developer need to enable to create and manage scratch orgs 
+A. Sandbox
+B. Dev Hub
+C. Environment Hub
+D. Production
+正确答案. B
+8.多选题
+A development team wants to use a deployment script to automatically deploy to a sandbox during their development cycles.
+Which two tools can they use to run a script that deploys to a sandbox  Choose 2 answers
+A. Change Sets
+B. SFDX CLI
+C. Developer Console
+D. Ant Migration Tool
+正确答案. BD
+9.单选题
+Which scenario is valid for execution by unit tests 
+A. Execute anonymous Apex as a different user.
+B. Generate a Visualforce PDF with getContentAsPDF( )·
+C. Load data from a remote site with a callout.
+D. Set the created date of a record using a system method.
+正确答案. C
+10.单选题
+Which Salesforce org has a complete duplicate copy of the production org including data and configuration 
+A. Full Sandbox
+B. Developer Pro Sandbox
+C. Production
+D. Partial Copy Sandbox
+正确答案. A
+11.单选题
+How can a developer check the test coverage of active Process Builders and Flows before deploying them in a Change Set 
+A. Use the Flow Properties page.
+B. Use SOQL and the Tooling API.
+C. Use the ApexTestResult class.
+D. Use the Code Coverage Setup page.
+正确答案. B
+12.单选题
+While writing an Apex class that creates Accounts, a developer wants to make sure that all required fields are handled properly.
+Which approach should the developer use to be sure that the Apex classworks correctly 
+A. Add the business logic to a test class.
+B. Include a try/catch block to the Apex class. 
+C. Perform a code review with another developer.
+D. Run the code in an Execute Anonymous block.
+正确答案. A
+13.多选题
+For which three items can a trace flag be configured  Choose 3 answers
+A. Process Builder
+B. Visualforce
+C. Apex Class
+D. User
+E. Apex Trigger
+正确答案. CDE
+14.单选题
+A developer wrote Apex code that calls out to an external system.
+How should a developer write the test to provide test coverage 
+A. Write a class that extends HTTPCalloutMock. 
+B. Write a class that extends WebserviceMock.
+C. Write a class that implements the HTTPCalloutMock interface.
+D. Write a class that implements WebserviceMock.
+正确答案. C
+15.单选题
+When using SsalesforceDX, what does a developer need to enable to create and manage scratch orgs 
+A. Environment Hub
+B. Production
+C. Sandbox
+D. Dev Hub
+正确答案. D
+16.单选题
+A developer needs to confirm that a Contact works correctly without changing the organization's data. 
+What should the developer do to test the Contact trigger 
+A. Use Deploy from the VSCode IDE to deploy an 'insert Contact' Apex class.
+B. Use the Test menu on the Developer Console to run all tests classes for the Contact trigger.
+C. Use the Open Execute Anonymous feature on the Developer Console to run an 'insert Contact' DML statement.
+D. Use the New button on the Salesforce Contacts Tab to create a new Contact record.
+正确答案. B
+17.单选题
+How should a developer write unit tests for a private method in an Apex class 
+A. Add a test method in the Apex class.
+B. Use the TestVisible annotation.
+C. Use the SeeAllData annotation.
+D. Mark the Apex class as global.
+正确答案. B
+18.单选题
+A development team wants to use a deployment script to automatically deploy to a sandbox during their deployment cycles.
+Which tool should they use to deploy to the sandbox 
+A. Ant Migration Tool
+B. Developer Console
+C. VSCode
+D. Change Sets
+正确答案. A
+19.单选题
+Which Salesforce org has a complete duplicate copy of the production org including data and configuration 
+A. Developer Pro Sandbox
+B. Production
+C. Partial Copy Sandbox
+D. Full Sandbox
+正确答案. D
+20.多选题
+What are two ways a developer can get the status of an enqueued job for a class that implements the queuable interface  
+Choose 2 answers
+A. Query the AsyncApex Job object
+B. View the Apex Jobs Page
+C. View the Apex Status Page
+D. View the Apex Flex Queue
+正确答案. AD
+21.多选题
+What are three ways for a developer to execute tests in an org  Choose 3 answers
+A. Metadata API
+B. Bulk API
+C. SalesforceDX
+D. Tooling API
+E. Developer Console
+正确答案. CDE
+22.单选题
+A team of many developers work in their own individual orgs that have the same configuration as the production org. 
+Which type of org is best suited for this scenario 
+A. Developer Edition
+B. Partner Developer Edition
+C. Full Sandbox
+D. Developer Sandbox
+正确答案. D
+23.单选题
+A developer observes that an Apex test method fails in the Sandbox. To identify the issue, the developer copies the code inside the test method and execute it 
+via the Execute Anonymous tool in the Developer Console. The code then executes with no exceptions or errors.
+Why did the test method fail in the sandbox and pass in the Developer Console 
+A. The test method does not use System.runAs to execute as a specific user.
+B. A developer needs to provide way to mass edit, update and delete records from list view, which two ways can this be achieved  Choose 2
+C. The test method relies on existing data in the sandbox.
+D. The test method has syntax error in the code.
+正确答案. C
+24.多选题
+Which two events need to happen when deploying to a production org Choose 2 answers
+A. All  Apex code must have at least 75% test coverage.
+B. All Process Builder Processes must have at least 1% test coverage.
+C. All Visual Flows must have at least 1% test coverage.
+D. All Triggers must have at least 1% test coverage.
+正确答案. AD
+25.单选题
+A developer created this Apex trigger that calls MyClass.myStaticMethod;
+trigger myTrigger on Contact(before insert){
+MyClass.myStaticMethod(trigger.new, trigger.oldMap);}
+The developer creates a test class with a test method that calls MyClass.myStaticMethod, resulting in 81% overall code coverage.
+What happens when the developer tries to deploy the trigger and two classes to production, assuming no other code exists 
+A. The deployment fails because no assertions were made in the test method.
+B. The deployment passes because the Apex code has required(>75%) code coverage.
+C. The deployment passes because both classes and the trigger were included in the deployment.
+D. The deployment fails because the Apex trigger has no code coverage.
+正确答案. D
+26.单选题
+A developer created a new Apex trigger with a helper class, and writes a test class that only exercises 95% coverage of the new Apex helper class.
+Change set deployment to production fails with the test coverage warning:
+"Test coverage of selected Apex Trigger is 0%, at least 1% test coverage is required."
+What should the developer do to successfully deploy the new Apex trigger and helper class 
+A. Increase the test class coverage on the helper class.
+B. Run the tests using the 'Run All Tests' method.
+C. Create a test class and methods to cover the Apex trigger.
+D. Remove the failing test methods from the test class.
+正确答案. C
+27.多选题
+Where are two locations a developer can look to find information about the status of asynchronous or future calls  Choose 2 answers
+A. Time-Based Workflow Monitor
+B. Apex Flex Queue
+C. Apex Jobs
+D. Paused Flow Interviews component
+正确答案. BC
+28.单选题
+A developer is writing tests for a class and needs to insert records to validate functionality.
+Which annotation method should be used to create records for every method in the test class 
+A. @PreTest
+B. @StartTest
+C. @isTest(SeeAllData=true)
+D. @TestSetup
+正确答案. D
+29.多选题
+What are two way for a developer to execute tests in an org  Choose 2 answers
+A. Bulk API
+B. Tooling API
+C. Metadata API
+D. Developer Console
+正确答案. BD
+30.单选题
+A developer wants to get access to the standard price book in the org while writing a test class that covers an OpportunityLineItem trigger.
+Which method allows access to the price book 
+A. Use Test.getStandardPricebookId() to get the standard price book ID.
+B. Use @TestVisible to allow the test method to see the standard price book.
+C. Use @IsTest(SeeAllData=true) and delete the existing standard price book.
+D. Use Test.loadData() and a static resource to load a standard price book.
+正确答案. A
+31.多选题
+Which three statements are true regarding custom exceptions in Apex  Choose 3 answers
+A. A custom exception class cannot contain member variables or methods.
+B. A custom exception class can implement one or many interfaces.
+C. A custom exception class name must be end with "Exception".
+D. A custom exception class must extend the system Exception class.
+E. A custom exception class can extend other classes besides the Exception class.
+正确答案. BCD
+32.单选题
+A team of developers is working on a source-driven project that allows them to work independently, with many different org configurations.
+Which type of Salesforce orgs should they use for their development 
+A. Full Copy sandboxes
+B. Developer orgs
+C. Developer sandboxes
+D. Scratch orgs.
+正确答案. D
+33.单选题
+What should be used to create scratch orgs 
+A. Sandbox refresh
+B. Salesforce CLI
+C. Developer Console
+D. Workbench
+正确答案. B
+=====================模拟卷A=================================
+1.单选题
+An org has an existing Visual Flow that creates an Opportunity with an Update Records element. A developer must update the Visual Flow to also create a Contact and store the created Contact's ID on the Opportunity.
+Which update should the developer make in the Visual Flow 
+A. Add a new Get Records element.
+B. Add a new Update Records element.
+C. Add a new Create Records element.
+D. Add a new Quick Action(of type Create) element.
+正确答案. C
+2.单选题
+A developer needs to implement the functionality for a service agent to gather multiple pieces of imformation from a customer in order to 
+send a replacement credit card.
+Which automation tool meets these requirements 
+A. Lightning Component
+B. Flow Builder
+C. Process Builder
+D. Approval Process
+正确答案. B
+3.多选题
+Universal Containers decides to use exclusively declarative development to build out a new Salesforce application.
+Which three options should be used to build out the database layer for the application  Choose 3 answers
+A. Relationships
+B. Process Builder
+C. Triggers
+D. Custom Objects and Fields
+E. Roll-up Summaries
+正确答案. ADE
+4.多选题
+A developer at Universal Containers is tasked with implementing a new Salesforce application that must built by their company's Salesforce administrator.
+Which three options should be considered for building out the business logic layer of the application  Choose 3 answers
+A. Scheduled Jobs
+B. Validation Rules
+C. Invocable Actions
+D. Workflows
+E. Process Builder
+正确答案. BDE
+5.多选题
+UC decides to use purely declarative development to build out a new Salesforce application.
+Which three options can be used to build out the business logic layer for this application Choose 3 answers
+A. Validation Rules
+B. Remote Actions
+C. Process Builder
+D. Flow Builder
+E. Batch Jobs
+正确答案. ACD
+6.单选题
+Universal Containers(UC) uses a custom object called Vendor. The Vendor custom object has a Master-Detail relationship with the standard Account object.
+Based on some internal discussions, the UC administrator tried to change the Master-Detail relationship to a Lookup relationship but was not able to do so.
+What is possible reason that this change was not permitted 
+A. The Vendor object must use a Master-Detail field for reporting.
+B. The Account object is included on a workflow on the Vendor object.
+C. The Account records contain Vendor roll-up summary fields.
+D. The Vendor records has existing values in the Account object.
+正确答案. C
+7.单选题
+Universal Containers(UC) uses a custom object called Vendor. The Vendor custom object has a Master-Detail relationship with the standard Account object.
+Based on some internal discussions, the UC administrator tried to change the Master-Detail relationship to a Lookup relationship but was not able to do so.
+What is possible reason that this change was not permitted 
+A. The Vendor object must use a Master-Detail field for reporting.
+B. The Account object is included on a workflow on the Vendor object.
+C. The Account records contain Vendor roll-up summary fields.
+D. The Vendor records has existing values in the Account object.
+正确答案. C
+8.单选题
+UC wants to lower its shipping cost while making the shipping process more efficient. The Distribution Officer advises UC to implement global addresses to allow multiple Accounts to share a default pickup address. The developer is tasked to create the supporting object and relationship for this business requirement and uses the Setup Menu to create a custom object called "Global Address".
+Which field should the developer add to create the most efficient model that supports the business need 
+A. Add a Master-Detail field on the Global Address object to the Account object.
+B. Add a Lookup field on the Account object to the Global Address object.
+C. Add a Master-Detail field on the Account object to the Global Address object.
+D. Add a Lookup field on the Global Address object to the Account object.
+正确答案. B
+9.单选题
+A developer wants to import 500 Opportunity records into a sandbox.
+Why should the developer choose to use Data Loader instead of Data Import Wizard 
+A. Data Import Wizard does not support Opportunities.
+B. Data Import Wizard can not import all 500 records.
+C. Data Loader runs from the developer's browser.
+D. Data Loader automatically relates Opportunities to Accounts.
+正确答案. A
+10.单选题
+A custom picklist field Food_Preference__c, exists an a custom object. The picklist contains the following options:
+'Vegan'. 'Kosher', 'No Preference'. The developer must ensure a value is populated every time a record is created or updated.
+A. Mark the field as Required on the object's page Layout.
+B. Mark the field as Required on the field definition.
+C. Set "Use the first value in the list as default value" as True.
+D. Set a validation rule to enforce a value is selected.
+正确答案. B
+11.单选题
+A developer has the following requirements:
+      Calculate the total amount on an Order.
+      Calculate the amount for each Line Item based on quantity selected and price.
+      Move Line Items to a different Order if a Line Item is not in stock.
+Which relationship implementation supports these requirements 
+A. Line Item has a Master-Detail field to Order and the Master can be re-parented.
+B. Order has a Lookup field to Line Item and there can be many Line Item per Order.
+C. Line Item has a Lookup field to Order and there can be many Line Item per Order.
+D. Order has a Master-Detail field to Line Item and there can be many Line Item per Order.
+正确答案. A
+12.单选题
+The values 'High', 'Medium', and 'Low' are identified as common values for multiple picklists across different objects.
+What is an approach a developer can take to streamline maintenance of the picklists and their values, while also restricting 
+the values to the ones mentioned above 
+A. Create the Picklist on each object and use a Global Picklist Value Set containing the values.
+B. Create the Picklist on each object as a required field and select "Display values alphabetically, not in the order entered".
+C. Create the Picklist on each object and select "Restrict picklist to the values defined in the value set".
+D. Create the Picklist on each object and add a validation rule to ensure data integrity.
+正确答案. A
+13.多选题
+When importing and exporting data into Salesforce, Which two statement are true 
+Choose 2 answers
+A. Data import wizard is a client application provided by Salesforce.
+B. Developer and Developer Pro sandboxes have different storage limits.
+C. Bulk API can be used to import large data volumes in development environments without bypassing the storage limits.
+D. Bulk API can be used to bypass the storage limits when importing large data volumes in development environments.
+正确答案. BC
+14.单选题
+How many Accounts will be inserted by the following block of code 
+for(Integer i = 0; i< 500; i++){
+    Account a = new Account (Name= 'New Account ' +i);
+    insert a;
+}
+A. 500
+B. 0
+C. 100
+D. 150
+正确答案. B
+15.单选题
+Which exception type cannot be caught 
+A. A Custom Exception
+B. NoAccessException
+C. CalloutException
+D. LimitException
+正确答案. D
+16.单选题
+Which action may cause triggers to fire 
+A. Updates to Feed Items
+B. Cascading delete operations
+C. Renaming or replacing a picklist entry
+D. Changing a user's default division when the transfer division option is checked
+正确答案. A
+17.单选题
+The sales management team at Universal Containers requires that the Lead Source field of the Lead record be populated when a Lead is converted.
+What should be used to ensure that user poulates the Lead Source field prior to converting a Lead 
+A. Validation Rule
+B. Formula Field
+C. Process Builder
+D. Workflow Rule
+正确答案. A
+18.单选题
+A developer must write an Apex method that will be called from a Lightning component. The method may delete an Account stored in the accountRec variable.
+Which method should a developer use to ensure only users that should be able to delete Accounts can successfully perform deletions 
+A. accountRec.isDeletable()
+B. Schema.sObjectType.Account.isDeletable()
+C. accountRec.sObjectType.isDeletable()
+D. Account.isDeletable()
+正确答案. B
+19.单选题
+A dveloper must implement a CheckPaymentProcessor class that povides check processing payment capabilities that adhere to what is defined for payments in the PaymentProcessor interface. 
+public interface PaymentProcessor {
+        void pay (Decimal amount) ;
+}
+Which is the correct implementation to use the PaymentProcessor interface class 
+A. public class CheckPaymentProcessor extends PaymentProcessor  {
+        public void pay (Decimal amount) { }
+}
+B. public class CheckPaymentProcessor implements PaymentProcessor {
+        public void pay(Decimal amount);
+}
+C. public class ChecpaymentProcessor extends PaymentProcessor {
+        public void pay(Decimal amount);
+}
+D. public class CheckPaymentProcessor implements PaymentProcessor {
+public void pay(Decimal amount) { }
+}
+正确答案. D
+20.单选题
+Universal Containers(UC) decides it will not to send emails to support personnel directly from Salesforce in the event that an unhandled 
+exception occurs.  Instead, UC wants an external system be notified of the error.
+What is the appropriate publish/subscribe logic to meet these requirements 
+A. Publish the error event using the  Eventbus.publish() method and have the external system subscribe to the event using CometD.
+B. Have the external system subscribe to the BatchApexError event, no publishing is necessary.
+C. Publish the error event using the addError() method and write a trigger to subscribe to the event and notify the external system.
+D. Publish the error event using the addError() method and have the external system subscribe to the event suing CometD.
+正确答案. A
+21.单选题
+The Job_Application__c custom object has a field that is a Master-Detail relationship to the Contact object, where the Contact object is the Master. As part of a feature implementation, a developer needs to retrieve a list containing all Contact records where the related Account Industry is 'Technology' while also retrieving the contact's Job_ Application__ c records.
+Based on the object's relationships, what is the most efficient statement to retrieve the list of contacts 
+A. [SELECT Id, (SELECT Id FROM Job_ Application__ c) FROM Contact WHERE Accounts. Industry = 'Technology'];
+B. [SELECT Id, (SELECT Id FROM Job_ Application__ c) FROM Contact WHERE Account. Industry = 'Technology'];
+C. [SELECT Id, (SELECT Id FROM Job_ Application__ r) FROM Contact WHERE Account. Industry = 'Technology'];
+D. [SELECT Id, (SELECT Id FROM Job_ Application__ r) FROM Contact WHERE Accounts. Industry = 'Technology'];
+正确答案. C
+22.单选题
+What is the value of the Trigger.old context variable in a Before Insert trigger 
+A. A list of newly created sObjects without IDs
+B. Undefined
+C. An empty list of sObjects
+D. null
+正确答案. D
+23.单选题
+A recursive transaction is initiated by a DML statement creating records for these two objects:
+1. Accounts
+2. Contacts
+The Account trigger hits a stack depth of 16:
+Which statement is true regarding the outcome of the transaction 
+A. The transaction fails and all the changes are rolled back.
+B. The transaction succeeds as long as the Contact trigger stack depth is less than 16.
+C. The transaction succeeds and all changes are committed to the database.
+D. The transaction fails only if the Contact trigger stack depth is greater or equal to 16.
+正确答案. A
+24.单选题
+A developer considers the following snippet of code:
+Boolean isOK;
+Integer x;
+String theString = 'Hello';
+if(isOk == false && theString == 'Hello'){
+x=1;
+}else if(isOK == true && theString == 'Hello'){
+x=2;
+}else if(isOk == null  && theString == 'Hello'){
+x=3;
+}else{
+x=4;
+}
+Based on this code, what is the value of x 
+A. 2
+B. 1
+C. 4
+D. 3
+正确答案. D
+25.单选题
+A develper writes a trigger on the Account object on the before update event that increments a count field. A workflow rule also increments the count field every time that an Account is created or updated. The field update in the workflow rule is configured to not re-evaluate workflow rules.
+What is the value of the count field if an Account is inserted with an initial value of zero, assuming no other automation logic is implemented on theAccount 
+A. 4
+B. 2
+C. 1
+D. 3
+正确答案. B
+26.单选题
+What is the result of the following code 
+Account a = new Account( );
+Database. insert(a, false);
+A. The record will not be created and no error will be reported .
+B. The record will be created and no error will be reported.
+C. The record will be created and a message will be in the debug log. 
+D. The record will not be created and an exception will be thrown.
+正确答案. A
+27.单选题
+Which action causes a before trigger to fire by default for Accounts 
+A. Importing data using the Data Loader and the Bulk API
+B. Converting Leads to Contact accounts
+C. Updating addresses using the Mass Address update tool
+D. Renaming or replacing picklists
+正确答案. A
+28.单选题
+What will be the output in the debug log in the event of a QueryException duing a call to the aQuery method in the following example 
+class myClass {
+   class CustomException extends QueryException  { }
+   public static Account aQuery( ) {
+       Account theAccount;
+       try {
+         system. debug( ' Querying Accounts. ');
+         theAccount = [SELECT Id FROM Account WHERE CreatedDate > TODAY] ;
+       }
+      catch (CustomException eX) {
+          system.debug(' Custom Exception. ');
+       }
+      catch (QueryException eX) {
+          system.debug('Query Exception. ');
+      } 
+     finally {
+       system.debug('Done. ');
+     }
+    return theAccount ;
+  }
+}
+A. Querying Accounts. Query Exception.
+B. Querying Accounts. Custom Exception. Done.
+C. Querying Accounts. Query Exeption. Done.
+D. Querying Accounts. Custom Exeption. 
+正确答案. C
+29.单选题
+Which statement should be used to allow some of the records in a list of records to be inserted if others fail to be inserted 
+A. insert records
+B. Database.insert(records, true)
+C. insert(records, false)
+D. Database.insert(records, false)
+正确答案. D
+30.多选题
+A developer needs to create a custom interface in Apex. Which three considerations must the developer keep in mind while developing the Apex interface  Choose 3 answers
+A. A method implementation can be defined within the Apex Interface.
+B. New methods can be added to a public interface within a released package.
+C. The Apex class must be declared using the interface keyword.
+D. The Apex class access modifier can be set to Private, Public, or Global.
+E. A method defined in an Apex interface cannot have an access modifier. 
+正确答案. BCE
+31.多选题
+Universal Containers recently transltioned from Classic to Lightning Experience. One of its business processes requires 
+contain values from the Opportunity object to be sent via an HTTP REST callout to its external order management system 
+based on a user-initiated action on the Opportunity detail page, Example values are as follows:
+Name
+Amount
+Account
+Which two methods should the developer implement to fulfill the business requirement 
+A. Create an after trigger on the Opportunity object that calls a helper method using @Future(Callout=true) to perform 
+the HTTP REST callout.
+B. Create a Visualforce page that performs the HTTP REST callout, and use a Visualforce quick action to expose the component 
+on the Opportunity detail page.
+C. Create a Lightning component that performs the HTTP REST callout, and use a Lightning Action to expose the component 
+on the Opportunity detail page.
+D. Create a Process Builder on the Opportunity object that exeutes an Apex immediate action to perform the HTTP RESR callout 
+whenever the Opportunity is updated.
+正确答案. AC
+32.多选题
+Example 1:
+AggregateResult[ ] groupedResults = [ SELECT CampaignId, AVG(Amount) FROM Opportunity GROUP BY CampaignId];
+for (AggregateResult ar : groupedResults) 
+{
+      System.debug( 'Campaign ID' + ar.get('CampaignId'));
+      System.debug( 'Average amount' + ar.get('expr0'));
+}
+Example 2:
+AggregateResult[ ] groupedResults = [ SELECT CampaignId, AVG(Amount) theAverage FROM Opportunity GROUP BY CampaignId];
+for (AggregateResult ar : groupedResults) 
+{
+      System.debug( 'Campaign ID' + ar.get('CampaignId'));
+      System.debug( 'Average amount' + ar.get('theAverage'));
+}
+Example 3:
+AggregateResult[ ] groupedResults = [ SELECT CampaignId, AVG(Amount) FROM Opportunity GROUP BY CampaignId];
+for (AggregateResult ar : groupedResults) 
+{
+      System.debug( 'Campaign ID' + ar.get('CampaignId'));
+      System.debug( 'Average amount' + ar.get.AVG());
+}
+Example 4:
+AggregateResult[ ] groupedResults = [ SELECT CampaignId, AVG(Amount) theAverage FROM Opportunity GROUP BY CampaignId];
+for (AggregateResult ar : groupedResults) 
+{
+      System.debug( 'Campaign ID' + ar.get('CampaignId'));
+      System.debug( 'Average amount' + ar.theAverage);
+}
+Which two examples above use the System.debug statements to correctly display the results from the SOQL aggregate queries 
+Choose 2 answers
+A. Example 1
+B. Example 2
+C. Example 3
+D. Example 4
+正确答案. AB
+33.多选题
+A developer is implementing an Apex class for a financial system. Within the class, the variables 'creditAmount' and 'debitAmount' should not be able to change once a value is assigned.
+In which two ways can the developer declare the variables to ensure their value can only be assigned one time  Choose 2 answers
+A. Use the final keyword and assign its value in the class constructor. 
+B. Use the static keyword and assign its value in the dass constructor. 
+C. Use the static keyword and assign its value in sstatic initializer. 
+D. Use the final keyword and assign its value when declaring the variable. 
+正确答案. AD
+34.多选题
+A developer identifies the following triggers on the Expense__c object:
+deleteExpense;
+applyDefaultsToExpense;
+validateExpenseUpdate;
+The triggers process before delete, before insert, and before update event respectively.
+Which two techniques should the developer implement to ensure reigger best practices are followed  Chooose 2 answers
+A. Unify all three triggers in a single trigger on the Expense__c object that includes all events.
+B. Create helper classes to execute the appropriate logic when a record is saved.
+C. Maintain all three triggers on the Expense__c object, but move the Apex logic out of the trigger definition.
+D. Unify the before insert and before update triggers and use Process Builder for the delete action.
+正确答案. AB
+35.多选题
+Which two operations can be performed using a formula field  Choose 2 answers
+A. Displaying the lasy four digits of an encrypted Social Security number.
+B. Triggering a Process Builder.
+C. Displaying an Image based on the Opportunity Amount.
+D. Calculating a score on a Lead based on the information from another field.
+正确答案. CD
+36.单选题
+How should a custom user interface be privided when a user edits an Account in Lightning Experience 
+A. Override the Account's Edit button with a Lightning component.
+B. Override the Account's Edit button with a Lightning Flow.
+C. Override the Account's Edit button with a Lightning Action.
+D. Override the Account's Edit button with a Lightning page.
+正确答案. A
+37.单选题
+A developer has an Apex controller for a Visualforce page that takes an ID as a URL parameter.
+How should the developer prevent a cross site scripting vulnerability 
+A. String.escapeSingleQuotes(ApexPages.currentPage().getParameters().get('url_param'))
+B. ApexPage.currentPage().getParameters().get('url_param')
+C. String.ValueOf(ApexPages.currentPage().getParameters().get('url_param'))
+D. ApePages.currentPage().getParameters().get('url_param').escapeHtml4()
+正确答案. D
+38.单选题
+Universal Containers has a large number of custom applications that were built using a third-party JavaScript framework and exposed using Visualforce pages. The company wants to update these applications to apply styling that resembles the look and feel of Lightning Experience.
+What should the developer do to fulfill the business request in the quickest and most effective manner 
+A. Set the attribute enableLightning to true in the definition.
+B. Incorporate the Salesforce Lightning Design System CSS stylesheet into the JavaScript applications. 
+C. Enable Available for Lightning Experience, Lightning Communities, and the mobile app on Visualforce pages used by the custom application. 
+D. Rewrite all Visualfocre pages as Lightning components. 
+正确答案. B
+39.单选题
+An Apex method, getAccounts, that returns a List of Accounts given a searchTerm, is available for Lightning Web components to use.
+What is the correct definition of a Lightning Web component property that uses the getAccounts method 
+A.  @AuraEnabled (getAccounts, { searchTerm: '$searchTerm' } )
+accountList;
+B.  @wire (getAccounts, '$searchTerm')
+accountList;
+C.  @wire (getAccounts, { searchTerm: '$searchTerm' })
+accountList;
+D.  @AuraEnabled(getAccounts, '$searchTerm')
+accountList;
+正确答案. C
+40.多选题
+Which three steps allow a custom SVG to be included in a Lightning web component Choose 3 answers
+A. Reference the getter in the HTML template.
+B. Upload the SVG as a static resource.
+C. Import the SVG as a content asset file.
+D. Import the static resource and provide a getter for it in JavaScript.
+E. Reference the import in the HTML template.
+正确答案. BDE
+41.多选题
+Which two are phases in the Salesforce Application Event propagation framework  Choose 2 answers
+A. Control
+B. Default
+C. Bubble
+D. Emit
+正确答案. BC
+42.多选题
+which two are best practices when it comes to Aura component and application event handling  Choose 2 answers
+A. Reuse the event logic in a component bundle, by putting the logic in the helper.
+B. Handle low-level events in the event handler and re-fire them as higher-level events.
+C. Use component events to communicate actions that should be handled at the application level.
+D. Try to use application events as opposed to component events.
+正确答案. AB
+43.多选题
+Which three resources in an Aura Component can contain JavaScript functions  Choose 3 answers
+A. Helper
+B. Controller
+C. Style
+D. Design
+E. Renderer
+正确答案. ABE
+44.多选题
+Which two statements are true about Getter and Setter methods as they relate to Visualforce  Choose 2 answers
+A. Getter methods can pass a value from a controller to a page.
+B. There is no guarantee for the order in which Getter or Setter methods are executed.
+C. Setter methods always have to be declared global.
+D. Setter methods can pass a value from a controller to a page.
+正确答案. AB
+45.多选题
+What are two ways that a controller and extension can be specified for a custom object named Notice on a Visualforce page  Choose 2 answers
+A. apex:page controller = "Notice__c" extensions="myControllerExtension"
+B. apex:page standardController = "Notice__c" extensions="myControllerExtension"
+C. apex:page controllers = "Notice__c, myControllerExtension"
+D. apex:page = Notice extends = "myControllerExtension"
+正确答案. AB
+46.单选题
+What should be used to create scratch orgs 
+A. Sandbox refresh
+B. Salesforce CLI
+C. Developer Console
+D. Workbench
+正确答案. B
+47.单选题
+A developer wants to get access to the standard price book in the org while writing a test class that covers an OpportunityLineItem trigger.
+Which method allows access to the price book 
+A. Use Test.getStandardPricebookId() to get the standard price book ID.
+B. Use @TestVisible to allow the test method to see the standard price book.
+C. Use @IsTest(SeeAllData=true) and delete the existing standard price book.
+D. Use Test.loadData() and a static resource to load a standard price book.
+正确答案. A
+48.单选题
+A developer needs to confirm that a Contact works correctly without changing the organization's data. 
+What should the developer do to test the Contact trigger 
+A. Use Deploy from the VSCode IDE to deploy an 'insert Contact' Apex class.
+B. Use the Test menu on the Developer Console to run all tests classes for the Contact trigger.
+C. Use the Open Execute Anonymous feature on the Developer Console to run an 'insert Contact' DML statement.
+D. Use the New button on the Salesforce Contacts Tab to create a new Contact record.
+正确答案. B
+49.单选题
+A developer created a new Apex trigger with a helper class, and writes a test class that only exercises 95% coverage of the new Apex helper class.
+Change set deployment to production fails with the test coverage warning:
+"Test coverage of selected Apex Trigger is 0%, at least 1% test coverage is required."
+What should the developer do to successfully deploy the new Apex trigger and helper class 
+A. Increase the test class coverage on the helper class.
+B. Run the tests using the 'Run All Tests' method.
+C. Create a test class and methods to cover the Apex trigger.
+D. Remove the failing test methods from the test class.
+正确答案. C
+50.单选题
+Which Salesforce org has a complete duplicate copy of the production org including data and configuration 
+A. Developer Pro Sandbox
+B. Production
+C. Partial Copy Sandbox
+D. Full Sandbox
+正确答案. D
+51.单选题
+A developer needs to create a baseline set of data(Accounts, Contacts, Products, Assets) for an entire suite of tests allowing them to test independent requirements various types of Salesforce Cases.
+Which approach can efficiently generate the required data for each unit test 
+A. Create a mock using the Stub API.
+B. Add @IsTest(seeAllData=true) at the start of the unit test class. 
+C. Create test data before Test.startTest( ) in the unit test. 
+D. Use @TestSetup with a void method.
+正确答案. D
+52.单选题
+How should a developer write unit tests for a private method in an Apex class 
+A. Add a test method in the Apex class.
+B. Use the TestVisible annotation.
+C. Use the SeeAllData annotation.
+D. Mark the Apex class as global.
+正确答案. B
+53.多选题
+Where are two locations a developer can look to find information about the status of asynchronous or future calls  Choose 2 answers
+A. Time-Based Workflow Monitor
+B. Apex Flex Queue
+C. Apex Jobs
+D. Paused Flow Interviews component
+正确答案. BC
+54.多选题
+Which two statements are true about using the @testSetup annotation in an Apex test class Choose 2 answers
+A. Test data is inserted once for all test methods in a class.
+B. The @testSetup annotation is not supported when the @isTest(SeeAllData=True) annotation is used.
+C. A method defined with the @testSetup annotation automatically executes before each test method in the test class is executes.
+D. Records created in the test setup method cannot be updated in individual test methods.
+正确答案. AB
+55.多选题
+For which three items can a trace flag be configured  Choose 3 answers
+A. Process Builder
+B. Visualforce
+C. Apex Class
+D. User
+E. Apex Trigger
+正确答案. CDE
+56.多选题
+What are two way for a developer to execute tests in an org  Choose 2 answers
+A. Bulk API
+B. Tooling API
+C. Metadata API
+D. Developer Console
+正确答案. BD
+57.单选题
+Given the code below:
+List<Account> aList = '[SELECT Id FROM Account];
+for(Account a : aList) {
+       List<Contact> cList = '[SELECT Id FROM Contact WHERE AccountId =:a.Id];
+}
+What should a developer do to correct the code so that there is no chance of hitting a governor limit 
+A. Add a LIMIT clause to the first SELECT SOQL statement.
+B. Rework the code and eliminate the for loop.
+C. Add a WHERE clause to the first SELECT SOQL statement.
+D. combine the two SELECT statements into a single SOQL statement.
+正确答案. D
+58.单选题
+The following Apex method is part of the ContactService class that is called from a trigger:
+public static void setBusinessUnitToEMEA(Contact thisContact){
+          thisContact.Business_Unit__c = 'EMEA';
+          update thisContact;
+}
+How should the developer modify the code to ensure best practices are met 
+A. public static void setBusinessUnitToEMEA(Contact thisContact){
+          List<Contact> contacts = new List<Contact>();
+          contacts.add(thisContact.Business_Unit__c = 'EMEA');
+          update contacts;
+}
+B. public static void setBusinessUnitToEMEA(List<Contact> contacts){
+          for(Contact thisContact : contacts){
+               thisContact.Business_Unit__c = 'EMEA';
+          }
+          update contacts;
+}
+C. public static void setBusinessUnitToEMEA(List<Contact> contacts){
+          for(Contact thisContact : contacts){
+               thisContact.Business_Unit__c = 'EMEA';
+               update contacts[0];
+          }  
+}
+D. public static void setBusinessUnitToEMEA(List<Contact> contacts){
+         contacts[0].Business_Unit__c = 'EMEA';
+          update contacts[0];
+}
+正确答案. B
+59.单选题
+What is the maximum number of SOQL queries used by the following code 
+List<Account> aList = '[SELECT Id from Account LIMIT 5];
+for(Account a : aList){
+List<Contact> cList ='[SELECT Id FROM Contact WHERE AccountId = :a.Id];
+}
+A. 1
+B. 2
+C. 6
+D. 5
+正确答案. C
+60.多选题
+A developer is tasked to perform a security review of the ContactSearch Apex calss that exists in the system. Within the class, the developer identifies the following method as a security threat:
+List<Contact> performSearch(String lastName){
+   return Database.query('SELECT Id, FirstName, LastName FROM Contact WHERE LastName Like %'+lastName+'%' );
+What are two ways the developer can update the method to prevent a SOQL injection attack  Choose 2 answers
+A. Use a regular expression expression on the parameter to remove special characters.
+B. Use the @ReadOnly annotation and the with sharing keyword on the class.
+C. Use variable binding and replace the dynamic query with a static SOQL.
+D. Use the escapeSingleQuotes method to sanitize the parameter before its use.
+正确答案. CD
+61.单选题
+A developer must crreate a Lightning component that allows users to input Contact record information to create a Contact record, including a Salary__c custom field.
+What should the developer use, along with a lightning-record-edit-form, so that Salary__c field functions as a currency input and is only viewable and editable by users that have the correct field level permissions on Salary__c  
+A. <lightning-input-field field-name="Salary__c"></lightning-input-field>
+B. <lightning-input-currency value="Salary__c"></lightning-input-currency>
+C. <lightning-input type="number" value="Salary__c" formatter="currency"></lightning-input>
+D. <lightning-formatted-number value="Salary__c" format-style="currency"></lightning-formatted-number>
+正确答案. A
+62.单选题
+Universal Containers wants a list button to display a Visualforce page that allows users to edit multiple records.
+Which Visualforce feature supports this requirement 
+A. recordSetVar page attribute
+B. <apex:listButton> tag
+C. custom controller
+D. controller extension
+正确答案. A
+63.单选题
+Which code displays the contents of a Visualforce page as a PDF 
+A. <apex:page renderAs="pdf">
+B. <apex:page contentType="pdf">
+C. <apex:page contentType="application/pdf">
+D. <apex:page renderAs="application/pdf">
+正确答案. A
+64.单选题
+A Lightning component has a wired property, searchResults, that stores a list of Opportunities.
+Which definition of the Apex method, to which the searchResults property is wired, should be used 
+A. @AuraEnabled(cacheable=false)
+public List<Opportunity> search(String term){ /*implementation*/ }
+B. @AuraEnabled(cacheable=true)
+public List<Opportunity> search(String term){ /*implementation*/ }
+C. @AuraEnabled(cacheable=false)
+public static List<Opportunity> search(String term){ /*implementation*/ }
+D. @AuraEnabled(cacheable=true)
+public static List<Opportunity> search(String term){ /*implementation*/ }
+正确答案. D
+65.多选题
+What are three capabilities of the <ltng:require> tag when loading JavaScript resources in Aura components  Choose 3 answers
+A. Specifying loading order
+B. Loading scripts in parallel
+C. Loading files from Documents
+D. One-time loading for duplicate scripts
+E. Loading externally hosted scripts
+正确答案. ABD
+=====================模拟卷B=================================
+1.单选题
+When a user edits the Postal Code on an Account, a custom Account text field named "TimeZone" must be updated based on the values in a PostalCodeToTimeZone__c custom object.
+How should a developer implement this feature 
+A. Build an Account custom trigger
+B. Build an Account Workflow Rule
+C. Build an Account Assignment Rule
+D. Build an Account Approval Process.
+正确答案. A
+2.单选题
+Which aspect of Apex programming is limited due to multitenancy 
+A. The number of methods in an Apex class
+B. The number of records returned from database queries
+C. The number of active Apex classes
+D. The number of records processed in a loop.
+正确答案. B
+3.多选题
+Which two types of process automation can be used to calculate the shipping cost for an Order when the Order is placed and apply a percentage of the shipping cost to some of the related Order Products  Choose 2 answers
+A. Process Builder
+B. Approval Process
+C. Workflow Rule
+D. Flow Builder
+正确答案. AD
+4.多选题
+UC wants to assess the advantages of declarative development versus programmatic customization for specific use cases in its Salesforce implementation.
+What are two characteristics of declarative development over programmatic customization  Choose 2 answers
+A. Declarative development has higher design limits and query limits.
+B. Declarative development can be done using the Setup UI.
+C. Declarative development does not require maintenance.
+D. Declarative development does not require Apex test classes.
+正确答案. BC
+5.多选题
+Which three operations affect the number of times a trigger can fire  Choose 3 answers
+A. Email messages
+B. Roll-Up Summary fields
+C. Workflow Rules
+D. Criteria-based Sharing calculations
+E. Lightning Flows
+正确答案. BCE
+6.单选题
+UC wants to lower its shipping cost while making the shipping process more efficient. The Distribution Officer advises UC to implement global addresses to allow multiple Accounts to share a default pickup address. The developer is tasked to create the supporting object and relationship for this business requirement and uses the Setup Menu to create a custom object called "Global Address".
+Which field should the developer add to create the most efficient model that supports the business need 
+A. Add a Master-Detail field on the Global Address object to the Account object.
+B. Add a Lookup field on the Account object to the Global Address object.
+C. Add a Master-Detail field on the Account object to the Global Address object.
+D. Add a Lookup field on the Global Address object to the Account object.
+正确答案. B
+7.单选题
+A SSN__c custom field exists on the Candidate __c custom object. The field is used to store each candidate's social security number and is marked as Unique in the schema definition.
+As part of a data enrichment process, Universal Containers has a CSV file that contains updated data for all candidates in the system. The file contains each Candidate's social security number as a data point. Universal Containers wants to upload this information into Salesforce, while ensuring all data rows are correctly mapped to a candidate in the system. Which technique should the developer implement to streamline the data upload 
+A. Upload the CSV into a custom object related to Candidate__c. 
+B. Update the SSN__c field definition to mark it as an External Id.
+C. Create a before insert trigger to correctly map the records. 
+D. Create a process Builder on the Candidate__c object to map the records.
+正确答案. B
+8.单选题
+A developer needs to join data received from an integration with an external system with parent records in Salesforce. The data set does not contain the Salesforce IDs of the parent records, but it does have a foreign key attribute that can be used to identify the parent.
+Which action will allow the developer to relate records in the data model without knowing the salesforce ID 
+A. Create and populate a custom field on the parent object marked as an External ID.
+B. Create a custom field on the child object of type Lookup.
+C. Create a custom field on the child object of type  External Relationship.
+D. Create and populate a custom field on the parent object marked as Unique.
+正确答案. A
+9.单选题
+Universal Containers has an order system that uses an Order Number to indentify an order for customers and service agents. Order records will be imported into Salesforce. 
+How should the Order Number field be defined in Salesforce 
+A. Indirect Lookup
+B. Lookup
+C. Number with External ID
+D. Direct Lookup
+正确答案. C
+10.单选题
+An org tracks customer orders on an Order object and the line items of an Order on the Line Item object. The Line Item object has a 
+Master/Detail relationship to the Order object. A developer has requirement to calculate the order amount on an Order and the line amount 
+on each Line Item based on quantity and price.
+What is the correct implementation 
+A. Write a process an the Line Item that calculated the item amount and order amount and updates the fields on the Line Item and the Order.
+B. Implement the line amount as a numeric formula field and the order amount as a roll-up summary field.
+C. Implement the line amount as a currency field and the order amount as SUM formula field.
+D. Write a single before trigger on the Line Item that calculates the item amount and updates the order amount on the Order.
+正确答案. B
+11.单选题
+What is an example of a polymorphic lookup field in Salesforce 
+A. The Leadld and Contactld fields on the standard Campaign Member object
+B. A custom field, Link__c, on the standard Contact object that looks up to an Account or a Campaign
+C. The Whatld field on the standard Event object
+D. The Parentld field on the standard Account object
+正确答案. C
+12.单选题
+A custom picklist field Food_Preference__c, exists an a custom object. The picklist contains the following options:
+'Vegan'. 'Kosher', 'No Preference'. The developer must ensure a value is populated every time a record is created or updated.
+A. Mark the field as Required on the object's page Layout.
+B. Mark the field as Required on the field definition.
+C. Set "Use the first value in the list as default value" as True.
+D. Set a validation rule to enforce a value is selected.
+正确答案. B
+13.多选题
+When importing and exporting data into Salesforce, Which two statement are true 
+Choose 2 answers
+A. Data import wizard is a client application provided by Salesforce.
+B. Developer and Developer Pro sandboxes have different storage limits.
+C. Bulk API can be used to import large data volumes in development environments without bypassing the storage limits.
+D. Bulk API can be used to bypass the storage limits when importing large data volumes in development environments.
+正确答案. BC
+14.单选题
+What is the result of the following code snippet 
+public void doWork(Account acct){
+      for (Integer i = 0; i <= 200; i++){
+        insert acct;
+      }
+ }
+A. 0 Accounts are inserted. 
+B. 1 Account is inserted.
+C. 200 Accounts are inserted.
+D. 201 Acconts are inerted.
+正确答案. A
+15.单选题
+A Visual Flow uses an Apex Action to provide additional information about multiple Contacts, stored in a custom class, ContactInfo. 
+Which is the correct definition of the Apex method that gets the additional information 
+A. @InvocableMethod(label='Additional Info')
+public ContactInfo getInfo(Id contactId)
+（ /*implementation*/ )
+B. @InvocableMethod(label='Additional Info')
+public static ContactInfo getInfo(Id contactId)
+（/ *implementation*/)
+C. @InvocableMethod(label='Additional Info')
+public List getInfo(List contactIds)
+（/ *implementation*/)
+D. @InvocableMethod(label='Additional Info')
+public static List getInfo(List contactIds)
+（/ *implementation*/)
+正确答案. D
+16.单选题
+Instead of sending emails to support personnel directly from Salesforce, UC wants to notify an external system in the event that an unhandled exception occurs. 
+What is the appropriate publish/subscribe logic to meet this requirement 
+A. Publish the error event using the addError( ) method and write a trigger to subscribe to the event and notify the external system.
+B. Publish the error event using the Eventbus.publish( ) method and have the external system subscribe to the event using CometD.
+C. Publish the error event using the addError( ) method and have the external system subscribe to the event using CometD.
+D. Have the external System subscribe to the BatchApexError event, no publishing is necessary.
+正确答案. B
+17.单选题
+Which statement should be used to allow some of the records in a list of records to be inserted if others fail to be inserted 
+A. insert records
+B. Database.insert(records, true)
+C. insert(records, false)
+D. Database.insert(records, false)
+正确答案. D
+18.单选题
+An Approval Process is defined in the Expense_Item__c object. A business rule dictates that whenever a user changes the Status to 'Submitted' on an Expense_Export__c record, all the Expense_Item__c records related to the expense report must enter the approval process individually. 
+What approach should be used to ensure the business requirement is met 
+A. Create a Process Builder on Expense_Report__c with an 'Apex' action type to submit all related Expense_Item__c records when the criteria is met.
+B. Create two Process Builder, one on Expense_Report__c to mark the related Expense_Item__c to submit the records for approval. 
+C. Create a Process Builder on Expense_Report__c with a 'Submit for Approval' action type to submit all related Expense_Item__c records when the criteria is met.
+D. Create a Process Builder on Expense_Report__c to mark the related Expense_Item__c as submittable and a trigger on Expense_Item__c to submit the records for approval. 
+正确答案. A
+19.单选题
+Universal Containers(UC) decides it will not to send emails to support personnel directly from Salesforce in the event that an unhandled 
+exception occurs.  Instead, UC wants an external system be notified of the error.
+What is the appropriate publish/subscribe logic to meet these requirements 
+A. Publish the error event using the  Eventbus.publish() method and have the external system subscribe to the event using CometD.
+B. Have the external system subscribe to the BatchApexError event, no publishing is necessary.
+C. Publish the error event using the addError() method and write a trigger to subscribe to the event and notify the external system.
+D. Publish the error event using the addError() method and have the external system subscribe to the event suing CometD.
+正确答案. A
+20.单选题
+The Job_Application__c custom object has a field that is a Master-Detail relationship to the Contact object, where the Contact object is the Master. As part of a feature implementation, a developer needs to retrieve a list containing all Contact records where the related Account Industry is 'Technology' while also retrieving the contact's Job_ Application__ c records.
+Based on the object's relationships, what is the most efficient statement to retrieve the list of contacts 
+A. [SELECT Id, (SELECT Id FROM Job_ Application__ c) FROM Contact WHERE Accounts. Industry = 'Technology'];
+B. [SELECT Id, (SELECT Id FROM Job_ Application__ c) FROM Contact WHERE Account. Industry = 'Technology'];
+C. [SELECT Id, (SELECT Id FROM Job_ Application__ r) FROM Contact WHERE Account. Industry = 'Technology'];
+D. [SELECT Id, (SELECT Id FROM Job_ Application__ r) FROM Contact WHERE Accounts. Industry = 'Technology'];
+正确答案. C
+21.单选题
+Which Salesforce feature allows a developer to see when a user last logged in to Salesforce if real-time notification is not required 
+A. Calendar Events
+B. Event Monitoring Log
+C. Developer Log
+D. Asynchronous Data Capture Events
+正确答案. B
+22.单选题
+Which action may cause triggers to fire 
+A. Updates to Feed Items
+B. Cascading delete operations
+C. Renaming or replacing a picklist entry
+D. Changing a user's default division when the transfer division option is checked
+正确答案. A
+23.单选题
+In the following example, which sharing context will myMethod execute when it is invoked 
+public Class myClass {
+     public void myMethod( ) { /* implementation */ }
+}
+A. Sharing rules will be inherited from the calling context.
+B. Sharing rules will not be enforced for the running user.
+C. Sharing rules will be enforced for the running user.
+D. Sharing rules will be enforced by the instantiating class.
+正确答案. B
+24.单选题
+Given the following trigger implementation:
+trigger leadTrigger on Lead (before update){
+       final ID BUSINESS_RECORDTYPEID = '012500000009Qad';
+       for(Lead thisLead: Trigger.new){
+            if(thisLead.Company != null && thisLead.RecordTypeId != BUSINESS_RECORDTYPEID){
+               thisLead.RecordTypeId = BUSINESS_RECORDTYPEID;
+            }
+       }
+}
+The developer receivers deployment errors every time a deployment is aattempted from Sandbox to Production.
+What should the developer do to ensure a successful deployment 
+A. Ensure BUSINESS_RECORDTYPEID is pushed as part of the deployment components.
+B. Ensure a record type with an ID of  BUSINESS_RECORDTYPEID exists on Production prior to deployment.
+C. Ensure the deployment is validated by a System user on Production.
+D. Ensure BUSINESS_RECORDTYPEID  is retrieved using Schema Describe calls.
+正确答案. D
+25.单选题
+Which exception type cannot be caught 
+A. A Custom Exception
+B. NoAccessException
+C. CalloutException
+D. LimitException
+正确答案. D
+26.单选题
+A dveloper must implement a CheckPaymentProcessor class that povides check processing payment capabilities that adhere to what is defined for payments in the PaymentProcessor interface. 
+public interface PaymentProcessor {
+        void pay (Decimal amount) ;
+}
+Which is the correct implementation to use the PaymentProcessor interface class 
+A. public class CheckPaymentProcessor extends PaymentProcessor  {
+        public void pay (Decimal amount) { }
+}
+B. public class CheckPaymentProcessor implements PaymentProcessor {
+        public void pay(Decimal amount);
+}
+C. public class ChecpaymentProcessor extends PaymentProcessor {
+        public void pay(Decimal amount);
+}
+D. public class CheckPaymentProcessor implements PaymentProcessor {
+public void pay(Decimal amount) { }
+}
+正确答案. D
+27.单选题
+Given the following Apex statement:
+Account myAccount = [SELECT Id, Name FROM Account];
+What occurs when more than one Account is returned by the SOQL query 
+A. The query fails and an error is written to the debug log.
+B. The first Account returned is assigned to myAccount.
+C. The variable, myAccount, is automatically cast to the List data type.
+D. An unhandled exception is thrown and the code terminates.
+正确答案. D
+28.单选题
+The sales management team at Universal Containers requires that the Lead Source field of the Lead record be populated when a Lead is converted.
+What should be used to ensure that user poulates the Lead Source field prior to converting a Lead 
+A. Validation Rule
+B. Formula Field
+C. Process Builder
+D. Workflow Rule
+正确答案. A
+29.单选题
+A developer considers the following snippet of code:
+Boolean isOK;
+Integer x;
+String theString = 'Hello';
+if(isOk == false && theString == 'Hello'){
+x=1;
+}else if(isOK == true && theString == 'Hello'){
+x=2;
+}else if(isOk == null  && theString == 'Hello'){
+x=3;
+}else{
+x=4;
+}
+Based on this code, what is the value of x 
+A. 2
+B. 1
+C. 4
+D. 3
+正确答案. D
+30.多选题
+A developer has a requirement to create a Case when a record on the Complaint__c object is created. Which two ways can this be solved  
+Choose 2 answers
+A. Create a flow that initiates a new Case.
+B. Use platform events add create a trigger on after insert of the Complaint__c record to create the Case.
+C. Create a Lightning Conponent that listens for the event and calls an Apex method to create the Case
+D. Create a Process Builder that triggers when a Complaint__c record is created, and create the Case.
+正确答案. AB
+31.多选题
+What are three considerations when using the @InvocableMethod annotation in Apex  Choose 3 answers
+A. Only one method using the @InvocableMethod annotation can be defined per Apex class.
+B. A method using the @InvocableMethod annotation must be declared as static. 
+C. A method using the @InvocableMethod annotation must define a return value.
+D. A method using the @InvocableMethod can have multiple input parameters.
+E. A method using the @InvocableMethod annotation can be declared as Public or Global.
+正确答案. ABE
+32.多选题
+UC hires a developer to built a custom search page to help users find the Accounts they want.
+Users will be able to search on Name, Description, and a custom comments field.
+Which consideration should the developer be aware of when deciding between SOQL and SOSL 
+Choose 2 answers
+A. SOQL is able to return more records.
+B. SOSL is faster for text searches.
+C. SOQL is faster for text searches.
+D. SOSL is able to return more records.
+正确答案. AB
+33.多选题
+A developer wants to invoke an outbound message when a record meets a specific criteria. 
+Which three features satisfy this use case  Choose 3 answers
+A. Process builder can be used to check the record criteria and send an outbound message without Apex Code.
+B. Visual Workflow can be used to check the record criteria and send an outbound message without Apex Code.
+C. Process builder can be used to check the record criteria and send an outbound message with Apex Code.
+D. Approval Process has the capability to check the record criteria and send an outbound message without Apex Code.
+E. Workfows can be used to check the record citeria and send an outbound message.
+正确答案. CDE
+34.多选题
+A developer needs to create a custom interface in Apex. Which three considerations must the developer keep in mind while developing the Apex interface  Choose 3 answers
+A. A method implementation can be defined within the Apex Interface.
+B. New methods can be added to a public interface within a released package.
+C. The Apex class must be declared using the interface keyword.
+D. The Apex class access modifier can be set to Private, Public, or Global.
+E. A method defined in an Apex interface cannot have an access modifier. 
+正确答案. BCE
+35.多选题
+A developer is implementing an Apex class for a financial system. Within the class, the variables 'creditAmount' and 'debitAmount' should not be able to change once a value is assigned.
+In which two ways can the developer declare the variables to ensure their value can only be assigned one time  Choose 2 answers
+A. Use the final keyword and assign its value in the class constructor. 
+B. Use the static keyword and assign its value in the dass constructor. 
+C. Use the static keyword and assign its value in sstatic initializer. 
+D. Use the final keyword and assign its value when declaring the variable. 
+正确答案. AD
+36.单选题
+Universal Containers has a large number of custom applications that were built using a third-party JavaScript framework and exposed using Visualforce pages. The company wants to update these applications to apply styling that resembles the look and feel of Lightning Experience.
+What should the developer do to fulfill the business request in the quickest and most effective manner 
+A. Set the attribute enableLightning to true in the definition.
+B. Incorporate the Salesforce Lightning Design System CSS stylesheet into the JavaScript applications. 
+C. Enable Available for Lightning Experience, Lightning Communities, and the mobile app on Visualforce pages used by the custom application. 
+D. Rewrite all Visualfocre pages as Lightning components. 
+正确答案. B
+37.单选题
+Application Events follow the traditional publish-subscribe model
+Which method is used to fire an event 
+A. fire()
+B. emit()
+C. fireEvent()
+D. registerEvent()
+正确答案. A
+38.单选题
+How should a custom user interface be privided when a user edits an Account in Lightning Experience 
+A. Override the Account's Edit button with a Lightning component.
+B. Override the Account's Edit button with a Lightning Flow.
+C. Override the Account's Edit button with a Lightning Action.
+D. Override the Account's Edit button with a Lightning page.
+正确答案. A
+39.单选题
+What does the Lightning Component framework provide to developers 
+A. Extended governor limits for applications
+B. Templated to create custom components
+C. Prebuilt components that can be reused
+D. Support for Classic and Lightning UIs
+正确答案. C
+40.多选题
+Which three steps allow a custom SVG to be included in a Lightning web component Choose 3 answers
+A. Reference the getter in the HTML template.
+B. Upload the SVG as a static resource.
+C. Import the SVG as a content asset file.
+D. Import the static resource and provide a getter for it in JavaScript.
+E. Reference the import in the HTML template.
+正确答案. BDE
+41.多选题
+Which two statements are true about Getter and Setter methods as they relate to Visualforce  Choose 2 answers
+A. Getter methods can pass a value from a controller to a page.
+B. There is no guarantee for the order in which Getter or Setter methods are executed.
+C. Setter methods always have to be declared global.
+D. Setter methods can pass a value from a controller to a page.
+正确答案. AB
+42.多选题
+Which three Salesforce resources can be accessed from a Lighting web component   Choose 3 answers
+A. All external libraries
+B. Static resources
+C. Content asset files
+D. Third-party web components
+E. SVG resources
+正确答案. BCE
+43.多选题
+What are two ways that a controller extension can be specified on a Visualforce page  Choose 2 answers
+A. apex:page controller="Account" extensions="myControllerExtension"
+B. apex:page extends="myControllerExtension"
+C. apex:page controller="Accunt, myControllerExtension"
+D. apex:page standardController="Account" extensions="myControllerExtension"
+正确答案. AD
+44.多选题
+Which two are phases in the Salesforce Application Event propagation framework  Choose 2 answers
+A. Control
+B. Default
+C. Bubble
+D. Emit
+正确答案. BC
+45.多选题
+Which three resources in an Aura Component can contain JavaScript functions  Choose 3 answers
+A. Helper
+B. Controller
+C. Style
+D. Design
+E. Renderer
+正确答案. ABE
+46.单选题
+What should be used to create scratch orgs 
+A. Sandbox refresh
+B. Salesforce CLI
+C. Developer Console
+D. Workbench
+正确答案. B
+47.单选题
+Which Salesforce org has a complete duplicate copy of the production org including data and configuration 
+A. Full Sandbox
+B. Developer Pro Sandbox
+C. Production
+D. Partial Copy Sandbox
+正确答案. A
+48.单选题
+A team of developers is working on a source-driven project that allows them to work independently, with many different org configurations.
+Which type of Salesforce orgs should they use for their development 
+A. Full Copy sandboxes
+B. Developer orgs
+C. Developer sandboxes
+D. Scratch orgs.
+正确答案. D
+49.单选题
+A developer needs to create a baseline set of data(Accounts, Contacts, Products, Assets) for an entire suite of tests allowing them to test independent requirements various types of Salesforce Cases.
+Which approach can efficiently generate the required data for each unit test 
+A. Create a mock using the Stub API.
+B. Add @IsTest(seeAllData=true) at the start of the unit test class. 
+C. Create test data before Test.startTest( ) in the unit test. 
+D. Use @TestSetup with a void method.
+正确答案. D
+50.单选题
+Which Salesforce org has a complete duplicate copy of the production org including data and configuration 
+A. Developer Pro Sandbox
+B. Production
+C. Partial Copy Sandbox
+D. Full Sandbox
+正确答案. D
+51.单选题
+A developer created a new Apex trigger with a helper class, and writes a test class that only exercises 95% coverage of the new Apex helper class.
+Change set deployment to production fails with the test coverage warning:
+"Test coverage of selected Apex Trigger is 0%, at least 1% test coverage is required."
+What should the developer do to successfully deploy the new Apex trigger and helper class 
+A. Increase the test class coverage on the helper class.
+B. Run the tests using the 'Run All Tests' method.
+C. Create a test class and methods to cover the Apex trigger.
+D. Remove the failing test methods from the test class.
+正确答案. C
+52.单选题
+How can a developer check the test coverage of active Process Builders and Flows before deploying them in a Change Set 
+A. Use the Flow Properties page.
+B. Use SOQL and the Tooling API.
+C. Use the ApexTestResult class.
+D. Use the Code Coverage Setup page.
+正确答案. B
+53.多选题
+What are three ways for a developer to execute tests in an org  Choose 3 answers
+A. Metadata API
+B. Bulk API
+C. SalesforceDX
+D. Tooling API
+E. Developer Console
+正确答案. CDE
+54.多选题
+A development team wants to use a deployment script to automatically deploy to a sandbox during their development cycles.
+Which two tools can they use to run a script that deploys to a sandbox  Choose 2 answers
+A. Change Sets
+B. SFDX CLI
+C. Developer Console
+D. Ant Migration Tool
+正确答案. BD
+55.多选题
+What are three characteristics of change set deployments  Choose 3 answers
+A. Deployment is done in a one-way, single transaction.
+B. Change sets can deploy custom settings data.
+C. Change sets can only be used between related organizations.
+D. Change sets can be used to transfer records.
+E. Sending a change set between two orgs requires a deployment connection.
+正确答案. ACE
+56.多选题
+For which three items can a trace flag be configured  Choose 3 answers
+A. Process Builder
+B. Visualforce
+C. Apex Class
+D. User
+E. Apex Trigger
+正确答案. CDE
+57.单选题
+Given the following Anonymous Block:
+List<Case> casesToUpdate = new List<Case>( );
+for(Case thisCase : [Select Id, Status FROM Case LIMIT 50000]){
+     thiscase. Status = 'Working';
+     casesToUpdate. add(hisCase);
+}
+try{
+  Database. update(casesToUpdate, false);
+}catch(Exception e){
+  System. debug(e. getMessage());
+}
+What should a developer consider for an environment that has over 10,000 Case records 
+A. The try/catch block will handle exceptions thrown by governor limits.
+B. The transaction will succeed and changes will be committed.
+C. The try/catch block will handle any DML exceptions thrown.
+D. The transcation will fail due to exceeding the governor limit.
+正确答案. D
+58.单选题
+Given the following block of code:
+try{
+  List<Account> retrievedRecords = '[SELECT Id FROM Account WHERE Website = null];
+}catch(Exception e){
+    //manage excception logic
+}
+What should a developer do to ensure the code execution is disrupted if the list retrievedRecords remains empty after the SOQL query 
+A. Check the state of the retrievedRecords variable and access the first element of the list if the variable is empty.
+B. Check the state of the retrievedRecords variable and throw a custom exception if the variable is empty.
+C. Check the state of the retrievedRecords variable and use System.assert(false) if the variable is empty.
+D. Replace the retrievedRecords variable declaration from a List of Account to a single Account.
+正确答案. B
+59.单选题
+A Next Best Action strategy uses an Enhance Element that invokes an Apex method to determine a discount level for a Contact, based on a number of factors.
+What is the correct definition of the Apex method 
+A.  @InvocableMethod
+ global static List<List<Recommendation>>
+ getLevel (List<ContactWrapper> input)
+ { /*implementation*/ }
+B. @InvocableMethod
+ global List<List<Recommendation>>
+ getLevel (List<ContactWrapper> input)
+ { /*implementation*/ }
+C.  @InvocableMethod
+ global Recommendation getLevel (ContactWrapper input)
+ { /*implementation*/ }
+D.  @InvocableMethod
+ global static ListRecommendation
+ getLevel (List<ContactWrapper> input)
+ { /*implementation*/ }
+正确答案. A
+60.多选题
+A developer is tasked to perform a security review of the ContactSearch Apex calss that exists in the system. Within the class, the developer identifies the following method as a security threat:
+List<Contact> performSearch(String lastName){
+   return Database.query('SELECT Id, FirstName, LastName FROM Contact WHERE LastName Like %'+lastName+'%' );
+What are two ways the developer can update the method to prevent a SOQL injection attack  Choose 2 answers
+A. Use a regular expression expression on the parameter to remove special characters.
+B. Use the @ReadOnly annotation and the with sharing keyword on the class.
+C. Use variable binding and replace the dynamic query with a static SOQL.
+D. Use the escapeSingleQuotes method to sanitize the parameter before its use.
+正确答案. CD
+61.单选题
+Universal Containers wants a list button to display a Visualforce page that allows users to edit multiple records.
+Which Visualforce feature supports this requirement 
+A. recordSetVar page attribute
+B. <apex:listButton> tag
+C. custom controller
+D. controller extension
+正确答案. A
+62.单选题
+A Lightning component has a wired property, searchResults, that stores a list of Opportunities.
+Which definition of the Apex method, to which the searchResults property is wired, should be used 
+A. @AuraEnabled(cacheable=false)
+public List<Opportunity> search(String term){ /*implementation*/ }
+B. @AuraEnabled(cacheable=true)
+public List<Opportunity> search(String term){ /*implementation*/ }
+C. @AuraEnabled(cacheable=false)
+public static List<Opportunity> search(String term){ /*implementation*/ }
+D. @AuraEnabled(cacheable=true)
+public static List<Opportunity> search(String term){ /*implementation*/ }
+正确答案. D
+63.单选题
+Which code should be used to update an existing Visualforce page that uses standard Visualforce components so that the page 
+matches the look and feel of Lightning Experience 
+A. <apex:page LightningStyleSheets="true">
+B. <apex:slds/>
+C. <apex:incluedLightning/>
+D. <apex:styleSheet value="{!$Resource.slds, 'assets/slds.css')}">
+正确答案. A
+64.单选题
+A developer has a Visualforce page and custom controller to save Account records. The developer wants to display any validation rule violations to the user.
+How can the developer make sure that validation rule violations are displayed 
+A. Include <apex:messages> on the Visualforce page.
+B. Perform the DML using the Database.upsert( ) method.
+C. Add custom controller attributes to display the message.
+D. Use a try/catch with a custom exception class.
+正确答案. A
+65.多选题
+A developer needs to create a custom button for the Account object that, when clicked, will perform a series of calculations and redirect the user to a custom Visualforce page.
+Which three attributes need to be defined with values in the <apex:page> tag to accomplish this  Choose 3 answers
+A. extensions
+B. action
+C. standardController
+D. renderAs
+E. readOnly
+正确答案. ABC
+
