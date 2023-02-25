@@ -33,6 +33,6 @@ def writeFile(filepath,fileNM):
     #fw.write(findContent)
     fw.close()
     f.close()
-#
+#####
 writeFile('D:\Study\py_Study\TestPy\\diff_date\\', '2.txt')
 
