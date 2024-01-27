@@ -1,0 +1,22 @@
+def calculate_monthly_payment(loan_amount, loan_date, years):
+    # 将年限转换为月数
+    months = years * 12
+
+    # 计算月利率
+    monthly_interest_rate = 0.01  # 假设年利率为1%，可以根据实际情况修改
+
+    # 计算每月还款金额
+    monthly_payment = (loan_amount * monthly_interest_rate * (1 + monthly_interest_rate) ** months) / ((1 + monthly_interest_rate) ** months - 1)
+
+    # 输出每月还款金额
+    print("贷款金额: ${}".format(loan_amount))
+    print("贷款日期: {}".format(loan_date))
+    print("年限: {}年".format(years))
+    print("每月还款金额: ${:.2f}".format(monthly_payment))
+
+if __name__ == "__main__":
+    loan_amount = float(input("请输入贷款金额（美元）: "))
+    loan_date = input("请输入贷款日期（例如：2023-08-01）: ")
+    years = float(input("请输入贷款年限: "))
+
+    calculate_monthly_payment(loan_amount, loan_date, years)
