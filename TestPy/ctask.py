@@ -2,9 +2,9 @@ def find_combination(numbers, target, partial=[]):
     
     s = sum(partial)
     #print("partial:", partial, s)
-    #if s == target:
     if  s == target  :
         print("组合:", partial, s)
+        #return
     #if s >= target:
     #    return
     for i in range(len(numbers)):
@@ -12,14 +12,8 @@ def find_combination(numbers, target, partial=[]):
         #print("for:", remaining, partial + [numbers[i]], i)
         find_combination(remaining, target, partial + [numbers[i]])
 if __name__ == "__main__":    
-    #numbers = [5000, 66033, -35200, 4643, -33096, 440, 12791, 32418, 39459, 22966, 1914, -11469, 22021, 440, 10361,-361930,186772,29914,-1476915,-216,-124810,-151,-516527,363983,-2110,1064,-110,-880,-42831]
-    #numbers = [5000, 66033, -35200, 4643, -33096, 440, 12791, 32418, 39459, 22966, 1914, -11469, 22021, 440, 10361]
-    #numbers = [5000, 66033, -35200, 4643, -33096, 39459,-11469]
-    #target = 94023 
-    #组合: [66033, 39459, -11469] 94023
-    #numbers = [2750, -34560, 2460, 20044, 1047, -8881, 7618, -29789, 5505, 440, 3721, 223124, 13744]
-    #numbers = [2750, -34560, 2460, 20044, 1047, -8881, 7618, -29789, 5505, 440, 3721, 223124, 13744, -152136, -1788, -1031112, -792970 ,5000, 66033, -35200, 4643, -33096, 39459,-11469]
     numbers = [7114,-5000,-1780,361609,3875,29800,-330,2750, -34560, 2460, 20044, 1047, -8881, 7618, -29789, 5505, 440, 3721, 223124, 13744, -152136, -1788]
     target = 241797
-    find_combination((numbers), target)
+    numbers.sort() 
+    find_combination(numbers, target)
     print("end",target)
